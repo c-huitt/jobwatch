@@ -354,6 +354,22 @@ def is_senior(title):
     t = title.lower()
     return ("senior" in t) or ("sr." in t) or t.startswith("sr ") or (" sr " in t)
 
+
+BOSTON_AREA = ("boston", "cambridge", "somerville", "watertown", "waltham",
+               "newton", "massachusetts")
+
+
+def is_priority_location(job):
+    # Boston-area or remote roles get pulled to the top of each section.
+    if job.get("remote"):
+        return True
+    loc = (job.get("location") or "").lower()
+    return ("remote" in loc) or any(k in loc for k in BOSTON_AREA)
+
+
+def sort_key(job):
+    return (0 if is_priority_location(job) else 1, job["company"], job["title"])
+
 # ----------------------------------------------------------------------------
 # Seen-state persistence
 # ----------------------------------------------------------------------------
@@ -405,12 +421,10 @@ def main():
 
     today = date.today().isoformat()
 
-    # Split matches into Senior and Other (title does not say senior) so the
-    # digest reads in two clean sections.
-    seniors = sorted([j for j in new_matches if is_senior(j["title"])],
-                     key=lambda j: (j["company"], j["title"]))
-    others = sorted([j for j in new_matches if not is_senior(j["title"])],
-                    key=lambda j: (j["company"], j["title"]))
+    # Split matches: roles whose title does not say senior come first, senior
+    # roles second. Within each, Boston-area and remote roles sort to the top.
+    others = sorted([j for j in new_matches if not is_senior(j["title"])], key=sort_key)
+    seniors = sorted([j for j in new_matches if is_senior(j["title"])], key=sort_key)
 
     def fmt(job):
         loc = job["location"] or ("Remote" if job["remote"] else "Location not listed")
@@ -427,11 +441,11 @@ def main():
 
     lines = [f"# New design roles: {today}", ""]
     if new_matches:
-        lines.append(f"{len(new_matches)} new ({len(seniors)} senior, {len(others)} other)")
+        lines.append(f"{len(new_matches)} new ({len(others)} roles, {len(seniors)} senior)")
+        lines.append("")
+        lines += section("Roles", others)
         lines.append("")
         lines += section("Senior roles", seniors)
-        lines.append("")
-        lines += section("Other roles", others)
     else:
         lines.append("No new matches today.")
     if errors:
