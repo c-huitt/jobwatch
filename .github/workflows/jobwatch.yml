@@ -2,11 +2,12 @@ name: jobwatch
 
 on:
   schedule:
-    # Weekdays at 12:46 UTC. That is about 8:46am Boston in summer (EDT) and
-    # 7:46am in winter (EST). GitHub runs cron in UTC only, so the local time
-    # shifts by an hour across daylight saving. GitHub may also delay scheduled
-    # runs by a few minutes under load.
-    - cron: "46 12 * * 1-5"
+    # Two weekday runs: a mid-morning sweep and an afternoon catch-up.
+    # Times are UTC (GitHub cron is UTC only), targeting Boston EDT (summer).
+    # In winter (EST) each lands one hour earlier. GitHub may also delay
+    # scheduled runs by several minutes under load, so treat these as approximate.
+    - cron: "7 14 * * 1-5"   # ~10:07am ET (9:07am in winter)
+    - cron: "7 20 * * 1-5"   # ~4:07pm ET  (3:07pm in winter)
   workflow_dispatch: {}   # also lets you run it manually from the Actions tab
 
 permissions:
