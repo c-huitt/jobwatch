@@ -349,6 +349,11 @@ def location_matches(job):
 def job_is_match(job):
     return title_matches(job["title"]) and location_matches(job)
 
+
+def is_senior(title):
+    t = title.lower()
+    return ("senior" in t) or ("sr." in t) or t.startswith("sr ") or (" sr " in t)
+
 # ----------------------------------------------------------------------------
 # Seen-state persistence
 # ----------------------------------------------------------------------------
@@ -398,14 +403,35 @@ def main():
 
     save_seen(seen)
 
-    # Build report
     today = date.today().isoformat()
-    lines = [f"# New design roles — {today}", ""]
+
+    # Split matches into Senior and Other (title does not say senior) so the
+    # digest reads in two clean sections.
+    seniors = sorted([j for j in new_matches if is_senior(j["title"])],
+                     key=lambda j: (j["company"], j["title"]))
+    others = sorted([j for j in new_matches if not is_senior(j["title"])],
+                    key=lambda j: (j["company"], j["title"]))
+
+    def fmt(job):
+        loc = job["location"] or ("Remote" if job["remote"] else "Location not listed")
+        return [f"- **{job['title']}** - {job['company']} ({loc})", f"  {job['url']}"]
+
+    def section(label, group):
+        out = [f"## {label} ({len(group)})"]
+        if group:
+            for job in group:
+                out += fmt(job)
+        else:
+            out.append("None today.")
+        return out
+
+    lines = [f"# New design roles: {today}", ""]
     if new_matches:
-        for job in sorted(new_matches, key=lambda j: (j["company"], j["title"])):
-            loc = job["location"] or ("Remote" if job["remote"] else "Location not listed")
-            lines.append(f"- **{job['title']}** — {job['company']} ({loc})")
-            lines.append(f"  {job['url']}")
+        lines.append(f"{len(new_matches)} new ({len(seniors)} senior, {len(others)} other)")
+        lines.append("")
+        lines += section("Senior roles", seniors)
+        lines.append("")
+        lines += section("Other roles", others)
     else:
         lines.append("No new matches today.")
     if errors:
@@ -420,6 +446,11 @@ def main():
     out_file = f"new_jobs_{today}.md"
     with open(out_file, "w", encoding="utf-8") as f:
         f.write(report + "\n")
+
+    # Structured sidecar so the email step can build a styled HTML digest.
+    with open(f"digest_{today}.json", "w", encoding="utf-8") as f:
+        json.dump({"date": today, "seniors": seniors, "others": others,
+                   "warnings": errors}, f, indent=2)
 
     print(f"\nSaved: {out_file}")
     print(f"Tracking {len(seen)} seen postings across {len(COMPANIES)} companies.")
