@@ -249,6 +249,40 @@ COMPANIES = [
     {"name": "Code for America", "ats": "greenhouse", "token": "codeforamerica"},
     {"name": "DonorsChoose",     "ats": "greenhouse", "token": "donorschoose"},
     {"name": "Brave",            "ats": "greenhouse", "token": "brave"},
+
+    # --- Boston area: consulting / finance / VC ---
+    {"name": "Thoughtworks",     "ats": "greenhouse", "token": "thoughtworks"},
+    {"name": "Charles River Associates", "ats": "greenhouse", "token": "charlesriverassociates"},
+    {"name": "Oliver Wyman",     "ats": "lever",      "token": "oliverwyman"},
+    {"name": "GMO",              "ats": "lever",      "token": "gmo"},
+    {"name": "Vestmark",         "ats": "greenhouse", "token": "vestmark"},
+    {"name": "General Catalyst", "ats": "greenhouse", "token": "generalcatalyst"},
+
+    # --- Boston area: tech / software ---
+    {"name": "TripAdvisor",      "ats": "greenhouse", "token": "tripadvisor"},
+    {"name": "EverQuote",        "ats": "greenhouse", "token": "everquote"},
+    {"name": "Veracode",         "ats": "greenhouse", "token": "veracode"},
+    {"name": "Definitive Healthcare", "ats": "greenhouse", "token": "definitivehc"},
+    {"name": "Nylas",            "ats": "ashby",      "token": "nylas"},
+    {"name": "Kaseya",           "ats": "greenhouse", "token": "kaseya"},
+    {"name": "Immuta",           "ats": "lever",      "token": "immuta"},
+    {"name": "Veeva",            "ats": "lever",      "token": "veeva"},
+    {"name": "Hopper",           "ats": "ashby",      "token": "hopper"},
+    {"name": "Tamr",             "ats": "ashby",      "token": "tamr"},
+    {"name": "Locus Robotics",   "ats": "greenhouse", "token": "locusrobotics"},
+    {"name": "Instrument",       "ats": "lever",      "token": "instrument"},
+
+    # --- Boston area: biotech ---
+    {"name": "Beam Therapeutics","ats": "greenhouse", "token": "beamtherapeutics"},
+    {"name": "Kymera Therapeutics", "ats": "greenhouse", "token": "kymeratherapeutics"},
+    {"name": "Scholar Rock",     "ats": "lever",      "token": "scholarrock"},
+    {"name": "Dyne Therapeutics","ats": "greenhouse", "token": "dynetherapeutics"},
+    {"name": "Tessera Therapeutics", "ats": "greenhouse", "token": "tesseratherapeutics"},
+
+    # --- Boston area: health / insurtech ---
+    {"name": "Amwell",           "ats": "greenhouse", "token": "amwell"},
+    {"name": "Biofourmis",       "ats": "greenhouse", "token": "biofourmis"},
+    {"name": "Openly",           "ats": "greenhouse", "token": "openly"},
 ]
 
 SEEN_FILE = "seen.json"
