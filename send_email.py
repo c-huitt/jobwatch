@@ -37,6 +37,10 @@ GREY = "#6b7280"     # "Senior roles" section
 FONT = ("-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,"
         "Arial,sans-serif")
 
+# Hosted "Open all" page (GitHub Pages). Override with MAIL_OPEN_ALL_URL.
+OPEN_ALL_URL = os.environ.get("MAIL_OPEN_ALL_URL", "").strip() or \
+    "https://c-huitt.github.io/jobwatch/"
+
 
 def pretty_date(iso):
     d = date.fromisoformat(iso)
@@ -105,6 +109,12 @@ def build_html(today, others, seniors, warnings):
         f'<tr><td style="font:400 14px/1.6 {FONT};color:{MUTED};padding-top:6px;">'
         f'{total} new for {html.escape(pretty_date(today))} '
         f'&nbsp;&middot;&nbsp; {len(others)} roles, {len(seniors)} senior</td></tr>'
+        # Open-all button
+        f'<tr><td style="padding-top:18px;">'
+        f'<a href="{html.escape(OPEN_ALL_URL, quote=True)}" target="_blank" '
+        f'rel="noopener" style="display:inline-block;background:{BLUE};color:#fff;'
+        f'font:600 14px/1 {FONT};text-decoration:none;padding:13px 22px;'
+        f'border-radius:10px;">Open all {total} in your browser &#8599;</a></td></tr>'
     )
     body += f'<tr><td>{_table(_section_html("Roles", others, BLUE))}</td></tr>'
     body += f'<tr><td>{_table(_section_html("Senior roles", seniors, GREY))}</td></tr>'
