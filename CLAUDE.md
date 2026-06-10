@@ -46,9 +46,13 @@ Locations: keep Boston metro plus anything remote or US-wide.
 
 A token is valid only when the URL returns JSON containing jobs, not a 404.
 
-- Greenhouse: `https://boards-api.greenhouse.io/v1/boards/TOKEN/jobs`
-- Lever:      `https://api.lever.co/v0/postings/TOKEN?mode=json`
-- Ashby:      `https://api.ashbyhq.com/posting-api/job-board/TOKEN`
+- Greenhouse:     `https://boards-api.greenhouse.io/v1/boards/TOKEN/jobs`
+- Lever:          `https://api.lever.co/v0/postings/TOKEN?mode=json`
+- Ashby:          `https://api.ashbyhq.com/posting-api/job-board/TOKEN`
+- SmartRecruiters:`https://api.smartrecruiters.com/v1/companies/TOKEN/postings` (TOKEN is case-sensitive)
+- Workable:       `https://apply.workable.com/api/v1/widget/accounts/TOKEN?details=true`
+- Recruitee:      `https://TOKEN.recruitee.com/api/offers/`
+- Breezy:         `https://TOKEN.breezy.hr/json`
 
 When adding any company, test its endpoint first. If a company uses Workday or
 another closed system, put it in `README_WORKDAY.md`, not in `COMPANIES`.

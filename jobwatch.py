@@ -59,8 +59,9 @@ TITLE_EXCLUDE = [
 # Add them back here if Senior postings become noise.
 
 # Companies to watch.
-#   ats:   "greenhouse" | "lever" | "ashby"
-#   token: the company's board identifier
+#   ats:   "greenhouse" | "lever" | "ashby" | "smartrecruiters" | "workable"
+#          | "recruitee" | "breezy"
+#   token: the company's board identifier (case-sensitive for SmartRecruiters)
 # Tokens marked "# verified" were confirmed live. The rest are best guesses
 # (usually the company slug). On the first run, the script prints a Warning
 # for any token that fails. Just fix or delete those lines. Companies that use
@@ -251,6 +252,11 @@ COMPANIES = [
     {"name": "DonorsChoose",     "ats": "greenhouse", "token": "donorschoose"},
     {"name": "Brave",            "ats": "greenhouse", "token": "brave"},
 
+    # --- Other ATS providers (SmartRecruiters / Workable / Recruitee / Breezy) ---
+    # Add more here as you verify them. SmartRecruiters tokens are the exact,
+    # case-sensitive company identifier (e.g. "Experian", not "experian").
+    {"name": "Experian",         "ats": "smartrecruiters", "token": "Experian"},
+
     # --- Boston area: consulting / finance / VC ---
     {"name": "Thoughtworks",     "ats": "greenhouse", "token": "thoughtworks"},
     {"name": "Charles River Associates", "ats": "greenhouse", "token": "charlesriverassociates"},
@@ -353,10 +359,102 @@ def fetch_ashby(company):
     return jobs
 
 
+def fetch_smartrecruiters(company):
+    jobs = []
+    offset = 0
+    while True:
+        url = (f"https://api.smartrecruiters.com/v1/companies/{company['token']}"
+               f"/postings?limit=100&offset={offset}")
+        data = _get_json(url)
+        content = data.get("content", [])
+        for j in content:
+            loc = j.get("location") or {}
+            parts = [loc.get("city", ""), loc.get("region", ""), loc.get("country", "")]
+            loc_str = ", ".join(p for p in parts if p)
+            jid = j.get("id") or j.get("uuid") or ""
+            jobs.append({
+                "company": company["name"],
+                "id": f"sr-{company['token']}-{jid}",
+                "title": j.get("name", "") or "",
+                "location": loc_str,
+                "remote": bool(loc.get("remote")) or "remote" in loc_str.lower(),
+                "url": f"https://jobs.smartrecruiters.com/{company['token']}/{jid}",
+            })
+        if len(content) < 100:
+            break
+        offset += 100
+        if offset >= 600:  # safety cap on very large boards
+            break
+        time.sleep(0.2)
+    return jobs
+
+
+def fetch_workable(company):
+    url = (f"https://apply.workable.com/api/v1/widget/accounts/"
+           f"{company['token']}?details=true")
+    data = _get_json(url)
+    jobs = []
+    for j in data.get("jobs", []):
+        loc = j.get("location") or {}
+        parts = [loc.get("city", ""), loc.get("region", ""), loc.get("country", "")]
+        loc_str = ", ".join(p for p in parts if p)
+        code = j.get("shortcode") or j.get("code") or ""
+        jobs.append({
+            "company": company["name"],
+            "id": f"wk-{company['token']}-{code}",
+            "title": j.get("title", "") or "",
+            "location": loc_str,
+            "remote": bool(loc.get("telecommuting")) or "remote" in loc_str.lower(),
+            "url": j.get("url") or f"https://apply.workable.com/{company['token']}/j/{code}/",
+        })
+    return jobs
+
+
+def fetch_recruitee(company):
+    url = f"https://{company['token']}.recruitee.com/api/offers/"
+    data = _get_json(url)
+    jobs = []
+    for j in data.get("offers", []):
+        loc_str = j.get("location") or ", ".join(
+            p for p in [j.get("city", ""), j.get("country", "")] if p)
+        jobs.append({
+            "company": company["name"],
+            "id": f"rc-{company['token']}-{j.get('id')}",
+            "title": j.get("title", "") or "",
+            "location": loc_str or "",
+            "remote": bool(j.get("remote")) or "remote" in (loc_str or "").lower(),
+            "url": j.get("careers_url") or j.get("url") or "",
+        })
+    return jobs
+
+
+def fetch_breezy(company):
+    url = f"https://{company['token']}.breezy.hr/json"
+    data = _get_json(url)
+    jobs = []
+    for j in (data if isinstance(data, list) else []):
+        loc = j.get("location") or {}
+        loc_str = loc.get("name", "") if isinstance(loc, dict) else (loc or "")
+        remote = bool(loc.get("is_remote")) if isinstance(loc, dict) else False
+        jobs.append({
+            "company": company["name"],
+            "id": f"bz-{company['token']}-{j.get('id')}",
+            "title": j.get("name", "") or "",
+            "location": loc_str,
+            "remote": remote or "remote" in (loc_str or "").lower(),
+            "url": j.get("url") or "",
+        })
+    return jobs
+
+
 FETCHERS = {
     "greenhouse": fetch_greenhouse,
     "lever": fetch_lever,
     "ashby": fetch_ashby,
+    "smartrecruiters": fetch_smartrecruiters,
+    "workable": fetch_workable,
+    "recruitee": fetch_recruitee,
+    "breezy": fetch_breezy,
 }
 
 # ----------------------------------------------------------------------------
