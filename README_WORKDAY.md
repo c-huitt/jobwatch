@@ -50,7 +50,7 @@ to click the links directly.
 - [DraftKings](https://careers.draftkings.com) (Workday)
 
 ## Universities (web/UX/digital designer roles, own systems)
-- [Northeastern](https://careers.northeastern.edu) (your alum, referral angle)
+- [Northeastern](https://northeastern.wd1.myworkdayjobs.com/careers) (your alum, referral angle)
 - [Harvard](https://hr.harvard.edu/jobs)
 - [MIT](https://careers.mit.edu)
 - [Boston University](https://www.bu.edu/hr/careers/)
