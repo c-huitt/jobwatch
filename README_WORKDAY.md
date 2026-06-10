@@ -140,6 +140,7 @@ closed, or on Workday / another system the script cannot query.
 - [Charles River Laboratories](https://jobs.criver.com)
 
 **Consumer / retail (Boston metro)**
+- [Bose (Framingham)](https://jobs.bose.com) (audio hardware, Workday)
 - [SharkNinja (Needham)](https://careers.sharkninja.com)
 - [Converse (Boston)](https://www.conversecareers.com)
 - [Reebok](https://www.reebok.com/careers)
