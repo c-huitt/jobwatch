@@ -6,9 +6,10 @@ designers but run on Workday or their own systems, with no public API the
 "UX", and click "create job alert" / "save search" so they email you when
 something opens. One-time setup, then it runs itself.
 
-Organized by **rough company size** (employee-count estimates, not exact), then
-by **industry** within each band. Some links are Google careers searches, used
-where there is no verified direct URL; they always resolve.
+Organized by **rough company size** (employee-count estimates, not exact),
+largest first, then by **industry** within each band. Some links are Google
+careers searches, used where there is no verified direct URL; they always
+resolve.
 
 Tip for viewing: open this file on GitHub
 ([README_WORKDAY.md](https://github.com/c-huitt/jobwatch/blob/main/README_WORKDAY.md))
@@ -16,97 +17,68 @@ to click the links directly.
 
 ---
 
-# Under ~500 employees
-
-## Finance / investments
-- [Summit Partners](https://www.summitpartners.com) (VC/PE)
-- [TA Associates](https://www.ta.com/careers) (PE)
-- [HarbourVest](https://www.harbourvest.com/careers) (PE)
-- [Acadian Asset Mgmt](https://www.acadian-asset.com/careers)
-- [Arrowstreet Capital](https://www.arrowstreetcapital.com)
-- [Geode Capital Mgmt](https://www.geodecapital.com)
-- [Berkshire Partners](https://www.berkshirepartners.com) (PE)
-
-## AI / data
-- [Kensho (S&P Global)](https://spglobal.com/careers)
-- [Indico Data](https://www.google.com/search?q=Indico+Data+careers) (Boston)
-- [Basis Technologies](https://www.google.com/search?q=Basis+Technologies+Rosette+careers) (Somerville, NLP)
-- [Zapata Computing](https://www.google.com/search?q=Zapata+AI+careers) (Boston, quantum)
-- [Lexalytics](https://www.google.com/search?q=Lexalytics+InMoment+careers) (NLP)
-- [Cogito](https://www.google.com/search?q=Cogito+Corp+careers) (Boston)
-
-## Software / SaaS
-- [HqO](https://www.google.com/search?q=HqO+careers) (Boston, proptech)
-- [Catalant](https://www.google.com/search?q=Catalant+careers) (Boston, marketplace)
-- [Jebbit](https://www.google.com/search?q=Jebbit+careers) (Boston, marketing)
-
-## Biotech / life sciences
-- [Editas Medicine](https://www.editasmedicine.com/careers)
-- [bluebird bio](https://www.bluebirdbio.com/careers)
-
-## Robotics / hardware
-- [Berkshire Grey](https://www.berkshiregrey.com/careers) (Bedford)
-
-## Edtech
-- [Panorama Education](https://www.panoramaed.com/about/careers)
-- [EVERFI](https://everfi.com/careers)
-
-## Fintech
-- [Forward Financing](https://www.google.com/search?q=Forward+Financing+careers) (Boston)
-
-## Agencies / design
-- [Upstatement](https://upstatement.com) (small Boston studio)
-
----
-
-# ~500 – 2,000 employees
+# ~10,000+ employees
 
 ## Consulting
-- [Analysis Group](https://www.analysisgroup.com/careers) (Boston HQ)
-- [Cornerstone Research](https://www.cornerstone.com/careers)
+- [Bain & Company](https://www.bain.com/careers) (Boston HQ)
+- [Boston Consulting Group (BCG)](https://careers.bcg.com) (Boston HQ)
+- [McKinsey & Company](https://www.mckinsey.com/careers)
+- [Slalom](https://www.slalom.com/careers)
+- [Booz Allen Hamilton](https://careers.boozallen.com)
+- [ZS Associates](https://www.zs.com/careers)
+- [Guidehouse](https://guidehouse.com/careers)
 
 ## Finance / insurance
-- [Bain Capital](https://www.baincapital.com/careers) (PE)
-- [Cambridge Associates](https://www.cambridgeassociates.com/careers)
-- [Loomis Sayles](https://www.loomissayles.com/careers)
-- [Putnam Investments](https://wellington.wd5.myworkdayjobs.com/External)
-- [Eastern Bank](https://www.easternbank.com/careers)
-- [Arbella Insurance](https://www.arbella.com/careers) (Quincy)
-- [Plymouth Rock](https://www.plymouthrock.com/careers)
+- [Fidelity](https://jobs.fidelity.com)
+- [State Street](https://careers.statestreet.com)
+- [Liberty Mutual](https://jobs.libertymutualgroup.com)
+- [John Hancock / Manulife](https://careers.manulife.com/global/en?adobe_mc=TS%3D1781115441%7CMCMID%3D56963666781455876682380098339298167397%7CMCORGID%3D37B127E253DB11F10A490D4E%2540AdobeOrg)
+- [MassMutual](https://careers.massmutual.com)
+- [Eaton Vance / Morgan Stanley](https://www.morganstanley.com/careers)
+- [Santander US](https://www.santandercareers.com)
+- [Citizens](https://jobs.citizensbank.com)
 
-## Software / SaaS
-- [Brightcove](https://www.brightcove.com/en/company/careers) (Boston, video)
-- [WillowTree (TELUS Digital)](https://www.willowtreeapps.com/careers)
-- [Anaqua](https://www.google.com/search?q=Anaqua+careers) (Boston, IP software)
-- [Interactions](https://www.google.com/search?q=Interactions+LLC+careers) (Franklin, conversational AI)
-- [Validity](https://www.google.com/search?q=Validity+Inc+careers) (Boston, email/data)
+## Software / hardware / IT
+- [Cadence](https://www.cadence.com/en_US/home/company/careers.html)
+- [Akamai](https://www.akamai.com/careers)
+- [Dell / EMC](https://jobs.dell.com) (Hopkinton)
+- [ServiceNow](https://careers.servicenow.com) (Waltham)
+- [Cimpress / Vistaprint](https://careers.cimpress.com) (Waltham)
+- [Analog Devices](https://www.analog.com/careers) (Wilmington)
 
-## AI / data
-- [DataRobot](https://www.datarobot.com/careers)
-- [Grammarly](https://www.grammarly.com/careers)
+## Robotics
+- [Amazon Robotics](https://amazon.jobs) (North Reading)
 
-## Security
-- [Snyk](https://snyk.io/careers)
-- [CloudHealth / Carbon Black (VMware)](https://www.google.com/search?q=VMware+Carbon+Black+careers) (Boston/Waltham)
+## Life sciences / pharma
+- [Takeda](https://www.takedajobs.com)
+- [Thermo Fisher Scientific](https://jobs.thermofisher.com) (Waltham)
+- [Revvity](https://careers.revvity.com) (Waltham)
+- [Charles River Laboratories](https://jobs.criver.com)
 
-## Fintech / ecommerce
-- [Flywire](https://careers.flywire.com)
-- [Thrasio](https://www.google.com/search?q=Thrasio+careers) (ecommerce)
+## Healthcare systems
+- [Mass General Brigham](https://www.massgeneralbrigham.org/careers)
+- [Beth Israel Lahey Health](https://www.bilh.org/careers)
 
-## Biotech / pharma
-- [Alnylam](https://www.alnylam.com/careers)
-- [Intellia Therapeutics](https://www.intelliatx.com/careers)
-- [Sarepta Therapeutics](https://www.sarepta.com/careers)
-- [Foundation Medicine](https://www.foundationmedicine.com/careers)
+## Retail / consumer
+- [CVS Health](https://jobs.cvshealth.com)
+- [TJX Companies](https://jobs.tjx.com) (Framingham)
+- [Staples](https://careers.staples.com) (Framingham)
+- [Chewy](https://careers.chewy.com) (Boston office)
+- [Wayfair](https://www.aboutwayfair.com/careers)
+- [Gillette / P&G](https://www.pgcareers.com) (South Boston)
+- [Dunkin' / Inspire Brands](https://careers.inspirebrands.com) (Canton)
 
-## Healthtech
-- [Devoted Health](https://www.devoted.com/careers)
+## Agencies / media
+- [Publicis Sapient](https://careers.publicissapient.com)
+- [EPAM (incl. former Continuum)](https://www.epam.com/careers)
+- [dentsu / Isobar](https://dentsuaegis.wd3.myworkdayjobs.com/en-US/DAN_GLOBAL/?source=Dentsu)
 
-## Robotics / hardware
-- [Symbotic](https://www.symbotic.com/careers) (Wilmington)
+## Universities
+- [Harvard](https://careers.harvard.edu/)
+- [MIT](https://careers.mit.edu)
 
-## Media
-- [GBH](https://www.wgbh.org/careers) (public broadcasting)
+## Government
+- [City of Boston](https://www.boston.gov/careers)
 
 ---
 
@@ -178,68 +150,97 @@ to click the links directly.
 
 ---
 
-# ~10,000+ employees
+# ~500 – 2,000 employees
 
 ## Consulting
-- [Bain & Company](https://www.bain.com/careers) (Boston HQ)
-- [Boston Consulting Group (BCG)](https://careers.bcg.com) (Boston HQ)
-- [McKinsey & Company](https://www.mckinsey.com/careers)
-- [Slalom](https://www.slalom.com/careers)
-- [Booz Allen Hamilton](https://careers.boozallen.com)
-- [ZS Associates](https://www.zs.com/careers)
-- [Guidehouse](https://guidehouse.com/careers)
+- [Analysis Group](https://www.analysisgroup.com/careers) (Boston HQ)
+- [Cornerstone Research](https://www.cornerstone.com/careers)
 
 ## Finance / insurance
-- [Fidelity](https://jobs.fidelity.com)
-- [State Street](https://careers.statestreet.com)
-- [Liberty Mutual](https://jobs.libertymutualgroup.com)
-- [John Hancock / Manulife](https://careers.manulife.com/global/en?adobe_mc=TS%3D1781115441%7CMCMID%3D56963666781455876682380098339298167397%7CMCORGID%3D37B127E253DB11F10A490D4E%2540AdobeOrg)
-- [MassMutual](https://careers.massmutual.com)
-- [Eaton Vance / Morgan Stanley](https://www.morganstanley.com/careers)
-- [Santander US](https://www.santandercareers.com)
-- [Citizens](https://jobs.citizensbank.com)
+- [Bain Capital](https://www.baincapital.com/careers) (PE)
+- [Cambridge Associates](https://www.cambridgeassociates.com/careers)
+- [Loomis Sayles](https://www.loomissayles.com/careers)
+- [Putnam Investments](https://wellington.wd5.myworkdayjobs.com/External)
+- [Eastern Bank](https://www.easternbank.com/careers)
+- [Arbella Insurance](https://www.arbella.com/careers) (Quincy)
+- [Plymouth Rock](https://www.plymouthrock.com/careers)
 
-## Software / hardware / IT
-- [Cadence](https://www.cadence.com/en_US/home/company/careers.html)
-- [Akamai](https://www.akamai.com/careers)
-- [Dell / EMC](https://jobs.dell.com) (Hopkinton)
-- [ServiceNow](https://careers.servicenow.com) (Waltham)
-- [Cimpress / Vistaprint](https://careers.cimpress.com) (Waltham)
-- [Analog Devices](https://www.analog.com/careers) (Wilmington)
+## Software / SaaS
+- [Brightcove](https://www.brightcove.com/en/company/careers) (Boston, video)
+- [WillowTree (TELUS Digital)](https://www.willowtreeapps.com/careers)
+- [Anaqua](https://www.google.com/search?q=Anaqua+careers) (Boston, IP software)
+- [Interactions](https://www.google.com/search?q=Interactions+LLC+careers) (Franklin, conversational AI)
+- [Validity](https://www.google.com/search?q=Validity+Inc+careers) (Boston, email/data)
 
-## Robotics
-- [Amazon Robotics](https://amazon.jobs) (North Reading)
+## AI / data
+- [DataRobot](https://www.datarobot.com/careers)
+- [Grammarly](https://www.grammarly.com/careers)
 
-## Life sciences / pharma
-- [Takeda](https://www.takedajobs.com)
-- [Thermo Fisher Scientific](https://jobs.thermofisher.com) (Waltham)
-- [Revvity](https://careers.revvity.com) (Waltham)
-- [Charles River Laboratories](https://jobs.criver.com)
+## Security
+- [Snyk](https://snyk.io/careers)
+- [CloudHealth / Carbon Black (VMware)](https://www.google.com/search?q=VMware+Carbon+Black+careers) (Boston/Waltham)
 
-## Healthcare systems
-- [Mass General Brigham](https://www.massgeneralbrigham.org/careers)
-- [Beth Israel Lahey Health](https://www.bilh.org/careers)
+## Fintech / ecommerce
+- [Flywire](https://careers.flywire.com)
+- [Thrasio](https://www.google.com/search?q=Thrasio+careers) (ecommerce)
 
-## Retail / consumer
-- [CVS Health](https://jobs.cvshealth.com)
-- [TJX Companies](https://jobs.tjx.com) (Framingham)
-- [Staples](https://careers.staples.com) (Framingham)
-- [Chewy](https://careers.chewy.com) (Boston office)
-- [Wayfair](https://www.aboutwayfair.com/careers)
-- [Gillette / P&G](https://www.pgcareers.com) (South Boston)
-- [Dunkin' / Inspire Brands](https://careers.inspirebrands.com) (Canton)
+## Biotech / pharma
+- [Alnylam](https://www.alnylam.com/careers)
+- [Intellia Therapeutics](https://www.intelliatx.com/careers)
+- [Sarepta Therapeutics](https://www.sarepta.com/careers)
+- [Foundation Medicine](https://www.foundationmedicine.com/careers)
 
-## Agencies / media
-- [Publicis Sapient](https://careers.publicissapient.com)
-- [EPAM (incl. former Continuum)](https://www.epam.com/careers)
-- [dentsu / Isobar](https://dentsuaegis.wd3.myworkdayjobs.com/en-US/DAN_GLOBAL/?source=Dentsu)
+## Healthtech
+- [Devoted Health](https://www.devoted.com/careers)
 
-## Universities
-- [Harvard](https://careers.harvard.edu/)
-- [MIT](https://careers.mit.edu)
+## Robotics / hardware
+- [Symbotic](https://www.symbotic.com/careers) (Wilmington)
 
-## Government
-- [City of Boston](https://www.boston.gov/careers)
+## Media
+- [GBH](https://www.wgbh.org/careers) (public broadcasting)
+
+---
+
+# Under ~500 employees
+
+## Finance / investments
+- [Summit Partners](https://www.summitpartners.com) (VC/PE)
+- [TA Associates](https://www.ta.com/careers) (PE)
+- [HarbourVest](https://www.harbourvest.com/careers) (PE)
+- [Acadian Asset Mgmt](https://www.acadian-asset.com/careers)
+- [Arrowstreet Capital](https://www.arrowstreetcapital.com)
+- [Geode Capital Mgmt](https://www.geodecapital.com)
+- [Berkshire Partners](https://www.berkshirepartners.com) (PE)
+
+## AI / data
+- [Kensho (S&P Global)](https://spglobal.com/careers)
+- [Indico Data](https://www.google.com/search?q=Indico+Data+careers) (Boston)
+- [Basis Technologies](https://www.google.com/search?q=Basis+Technologies+Rosette+careers) (Somerville, NLP)
+- [Zapata Computing](https://www.google.com/search?q=Zapata+AI+careers) (Boston, quantum)
+- [Lexalytics](https://www.google.com/search?q=Lexalytics+InMoment+careers) (NLP)
+- [Cogito](https://www.google.com/search?q=Cogito+Corp+careers) (Boston)
+
+## Software / SaaS
+- [HqO](https://www.google.com/search?q=HqO+careers) (Boston, proptech)
+- [Catalant](https://www.google.com/search?q=Catalant+careers) (Boston, marketplace)
+- [Jebbit](https://www.google.com/search?q=Jebbit+careers) (Boston, marketing)
+
+## Biotech / life sciences
+- [Editas Medicine](https://www.editasmedicine.com/careers)
+- [bluebird bio](https://www.bluebirdbio.com/careers)
+
+## Robotics / hardware
+- [Berkshire Grey](https://www.berkshiregrey.com/careers) (Bedford)
+
+## Edtech
+- [Panorama Education](https://www.panoramaed.com/about/careers)
+- [EVERFI](https://everfi.com/careers)
+
+## Fintech
+- [Forward Financing](https://www.google.com/search?q=Forward+Financing+careers) (Boston)
+
+## Agencies / design
+- [Upstatement](https://upstatement.com) (small Boston studio)
 
 ---
 
