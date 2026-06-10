@@ -199,4 +199,4 @@ They aggregate many of the smaller startups not worth tracking individually.
 
 _Note: these careers links point to each company's general careers site. If a
 company reorganizes its site a link may redirect; the three without a known
-direct URL (Point32Health, Putnam, Genuine) use a Google careers search instead._
+direct URL (Point32Health, Genuine) use a Google careers search instead._
