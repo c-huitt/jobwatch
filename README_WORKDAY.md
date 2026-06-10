@@ -165,6 +165,31 @@ closed, or on Workday / another system the script cannot query.
 - [MBTA](https://mbta.com/careers)
 - [GBH](https://www.wgbh.org/careers)
 
+## Boston-office employers, round 2 (no public ATS board found)
+No queryable Greenhouse/Lever/Ashby/SmartRecruiters/Workable board, so these are
+manual-alert only. Links are careers searches that always resolve.
+
+**Software / AI / security**
+- [Brightcove](https://www.brightcove.com/en/company/careers) (Boston, video)
+- [HqO](https://www.google.com/search?q=HqO+careers) (Boston, proptech)
+- [Anaqua](https://www.google.com/search?q=Anaqua+careers) (Boston, IP software)
+- [Indico Data](https://www.google.com/search?q=Indico+Data+careers) (Boston, AI)
+- [Basis Technologies](https://www.google.com/search?q=Basis+Technologies+Rosette+careers) (Somerville, NLP)
+- [Zapata Computing](https://www.google.com/search?q=Zapata+AI+careers) (Boston, quantum)
+- [Lexalytics](https://www.google.com/search?q=Lexalytics+InMoment+careers) (NLP)
+- [Cogito](https://www.google.com/search?q=Cogito+Corp+careers) (Boston, AI)
+- [Interactions](https://www.google.com/search?q=Interactions+LLC+careers) (Franklin, conversational AI)
+- [Validity](https://www.google.com/search?q=Validity+Inc+careers) (Boston, email/data)
+- [Catalant](https://www.google.com/search?q=Catalant+careers) (Boston, consulting marketplace)
+- [CloudHealth / Carbon Black (VMware)](https://www.google.com/search?q=VMware+Carbon+Black+careers) (Boston/Waltham)
+- [Datto (Kaseya)](https://www.google.com/search?q=Datto+careers) (security/MSP)
+- [Buildium (RealPage)](https://www.google.com/search?q=Buildium+careers) (Boston, proptech)
+
+**Fintech / consumer**
+- [Forward Financing](https://www.google.com/search?q=Forward+Financing+careers) (Boston)
+- [Thrasio](https://www.google.com/search?q=Thrasio+careers) (ecommerce)
+- [Jebbit](https://www.google.com/search?q=Jebbit+careers) (Boston, marketing)
+
 ---
 
 **Tip:** also set a single saved search on

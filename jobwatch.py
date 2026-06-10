@@ -254,6 +254,29 @@ COMPANIES = [
     {"name": "DonorsChoose",     "ats": "greenhouse", "token": "donorschoose"},
     {"name": "Brave",            "ats": "greenhouse", "token": "brave"},
 
+    # --- Boston metro: expansion round 2 (all MA-based, verified live) ---
+    {"name": "Wasabi",           "ats": "greenhouse", "token": "wasabi"},
+    {"name": "Quaise Energy",    "ats": "greenhouse", "token": "quaise"},
+    {"name": "VEIR",             "ats": "greenhouse", "token": "veir"},
+    {"name": "CloudZero",        "ats": "ashby",      "token": "cloudzero"},
+    {"name": "Paperless Parts",  "ats": "greenhouse", "token": "paperlessparts"},
+    {"name": "Owl Labs",         "ats": "greenhouse", "token": "owllabs"},
+    {"name": "BlueConic",        "ats": "greenhouse", "token": "blueconic"},
+    {"name": "Mendix",           "ats": "lever",      "token": "mendix"},
+    {"name": "ButcherBox",       "ats": "greenhouse", "token": "butcherbox"},
+    {"name": "Ellevation",       "ats": "lever",      "token": "ellevationeducation"},
+    {"name": "Pickle Robot",     "ats": "lever",      "token": "picklerobot"},
+    {"name": "Demiurge Studios", "ats": "lever",      "token": "demiurgestudios"},
+    {"name": "Blueprint Medicines","ats": "greenhouse","token": "blueprintmedicines"},
+    {"name": "Disc Medicine",    "ats": "greenhouse", "token": "discmedicine"},
+    {"name": "Relay Therapeutics","ats": "greenhouse", "token": "relaytherapeutics"},
+    {"name": "Tango Therapeutics","ats": "greenhouse", "token": "tangotherapeutics"},
+    {"name": "Akebia Therapeutics","ats": "greenhouse","token": "akebiatherapeutics"},
+    {"name": "Korro Bio",        "ats": "lever",      "token": "korrobio"},
+    {"name": "Chroma Medicine",  "ats": "greenhouse", "token": "chromamedicine"},
+    {"name": "Valo Health",      "ats": "greenhouse", "token": "valohealth"},
+    {"name": "Strand Therapeutics","ats": "greenhouse","token": "strandtherapeutics"},
+
     # --- Other ATS providers (SmartRecruiters / Workable / Recruitee / Breezy) ---
     # Add more here as you verify them. SmartRecruiters tokens are the exact,
     # case-sensitive company identifier (e.g. "Experian", not "experian").
