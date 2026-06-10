@@ -28,7 +28,7 @@ jobs:
       - name: Run jobwatch
         run: python3 jobwatch.py
 
-      - name: Email digest (only if matches and secrets are set)
+      - name: Email digest or heartbeat
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
@@ -36,9 +36,19 @@ jobs:
         run: python3 send_email.py
 
       - name: Commit results
+        if: always()
         run: |
           git config user.name "jobwatch-bot"
           git config user.email "jobwatch@users.noreply.github.com"
           git add seen.json new_jobs_*.md docs/index.html
           git commit -m "jobwatch: $(date -u +%Y-%m-%d)" || echo "No changes to commit"
-          git push
+          git push || echo "Nothing to push"
+
+      - name: Notify on failure
+        if: failure()
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python3 notify_failure.py

@@ -593,7 +593,7 @@ def main():
     # Structured sidecar so the email step can build a styled HTML digest.
     with open(f"digest_{today}.json", "w", encoding="utf-8") as f:
         json.dump({"date": today, "seniors": seniors, "others": others,
-                   "warnings": errors}, f, indent=2)
+                   "warnings": errors, "companies": len(COMPANIES)}, f, indent=2)
 
     # Regenerate the "Open all" page only when there are matches, so a quiet
     # run does not wipe the last useful page the email links to.

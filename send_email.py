@@ -135,6 +135,44 @@ def build_html(today, others, seniors, warnings):
     return body
 
 
+def build_heartbeat_html(today, companies, warnings):
+    scanned = f"{companies} companies" if companies else "your tracked companies"
+    body = (
+        f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
+        f'style="background:{PAGE_BG};padding:32px 12px;">'
+        f'<tr><td align="center">'
+        f'<table role="presentation" width="600" cellpadding="0" cellspacing="0" '
+        f'style="max-width:600px;width:100%;background:{CARD_BG};border:1px solid '
+        f'{BORDER};border-radius:14px;padding:36px 38px;">'
+        f'<tr><td style="font:700 23px/1.3 {FONT};color:{INK};">'
+        f'No new design roles today</td></tr>'
+        f'<tr><td style="font:400 14px/1.6 {FONT};color:{MUTED};padding-top:6px;">'
+        f'Checked {scanned} on {html.escape(pretty_date(today))}. '
+        f'Nothing new since the last run. This note just confirms the check ran; '
+        f'the next sweep is later today.</td></tr>'
+    )
+    if warnings:
+        warn_rows = "".join(
+            f'<tr><td style="font:400 13px/1.6 {FONT};color:{MUTED};padding:5px 0;">'
+            f'{html.escape(w)}</td></tr>' for w in warnings)
+        body += (
+            f'<tr><td style="padding:30px 0 8px;font:700 13px/1 {FONT};color:{MUTED};'
+            f'text-transform:uppercase;">Warnings</td></tr>'
+            f'<tr><td>{_table(warn_rows)}</td></tr>')
+    body += '</table></td></tr></table>'
+    return body
+
+
+def build_heartbeat_text(today, companies, warnings):
+    scanned = f"{companies} companies" if companies else "your tracked companies"
+    lines = [f"No new design roles today ({pretty_date(today)}).",
+             f"Checked {scanned}. Nothing new since the last run.", ""]
+    if warnings:
+        lines.append("Warnings")
+        lines += [f"  - {w}" for w in warnings]
+    return "\n".join(lines)
+
+
 def build_text(today, others, seniors, warnings):
     lines = [f"New design roles: {pretty_date(today)}",
              f"{len(others) + len(seniors)} new "
@@ -174,29 +212,33 @@ def main():
     others = digest.get("others", [])
     seniors = digest.get("seniors", [])
     warnings = digest.get("warnings", [])
+    companies = digest.get("companies", 0)
 
     total = len(others) + len(seniors)
-    if total == 0:
-        print("No new matches today. Skipping email.")
-        return
-
     msg = EmailMessage()
-    msg["Subject"] = f"{total} new design role(s): {pretty_date(today)}"
     msg["From"] = user
     msg["To"] = to_addr
-    msg.set_content(build_text(today, others, seniors, warnings))
-    msg.add_alternative(build_html(today, others, seniors, warnings), subtype="html")
+    if total == 0:
+        # Heartbeat: confirm the run happened even with nothing new.
+        msg["Subject"] = f"No new design roles today: {pretty_date(today)}"
+        msg.set_content(build_heartbeat_text(today, companies, warnings))
+        msg.add_alternative(build_heartbeat_html(today, companies, warnings), subtype="html")
+    else:
+        msg["Subject"] = f"{total} new design role(s): {pretty_date(today)}"
+        msg.set_content(build_text(today, others, seniors, warnings))
+        msg.add_alternative(build_html(today, others, seniors, warnings), subtype="html")
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
         server.login(user, app_pw)
         server.send_message(msg)
-    print(f"Emailed {total} match(es) ({len(others)} roles, {len(seniors)} senior) "
-          f"to {to_addr}.")
+    if total == 0:
+        print(f"Heartbeat sent to {to_addr} (no new matches).")
+    else:
+        print(f"Emailed {total} match(es) ({len(others)} roles, {len(seniors)} senior) "
+              f"to {to_addr}.")
 
 
 if __name__ == "__main__":
-    try:
-        main()
-    except Exception as e:
-        # Never fail the workflow because of email trouble.
-        print(f"Email step error (non-fatal): {e}", file=sys.stderr)
+    # Let real send errors propagate so the workflow marks the run failed and
+    # the failure-notification step fires. Graceful skips above use return.
+    main()
