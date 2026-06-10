@@ -17,6 +17,55 @@ to click the links directly.
 
 ---
 
+# New additions (to sort)
+
+Staging area: Boston/MA "best places to work" companies that look like they hire
+UX/Product designers but have no queryable board. Pending review, then we will
+split them into the size/industry sections below. Links are careers searches.
+
+## Software / SaaS
+- [Workhuman](https://www.google.com/search?q=Workhuman+careers) (Framingham, HR/recognition)
+- [Dynatrace](https://www.google.com/search?q=Dynatrace+careers) (Waltham, observability)
+- [Nexthink](https://www.google.com/search?q=Nexthink+careers) (Boston, digital employee experience)
+- [Quickbase](https://www.google.com/search?q=Quickbase+careers) (Boston, low-code)
+- [Bullhorn](https://www.google.com/search?q=Bullhorn+careers) (Boston, staffing software)
+- [Fuze / 8x8](https://www.google.com/search?q=8x8+careers) (Boston, comms)
+- [Acoustic](https://www.google.com/search?q=Acoustic+marketing+careers) (Boston, marketing)
+- [InsightSquared / Mediafly](https://www.google.com/search?q=Mediafly+careers) (Boston, sales analytics)
+- [Alyce / Sendoso](https://www.google.com/search?q=Sendoso+careers) (Boston, gifting)
+- [Inkling](https://www.google.com/search?q=Inkling+learning+careers) (learning content)
+- [Carbonite / OpenText](https://www.google.com/search?q=OpenText+careers) (Boston, backup)
+- [Veson Nautical](https://www.google.com/search?q=Veson+Nautical+careers) (Boston, maritime software)
+- [Repsly](https://www.google.com/search?q=Repsly+careers) (Boston, field sales)
+
+## Security
+- [CyberArk](https://www.google.com/search?q=CyberArk+careers) (Newton, identity security)
+- [Imprivata](https://www.google.com/search?q=Imprivata+careers) (Lexington, healthcare IT security)
+- [Devo](https://www.google.com/search?q=Devo+security+careers) (Cambridge, security analytics)
+- [Nuance / Microsoft](https://www.google.com/search?q=Nuance+Microsoft+careers) (Burlington, speech AI)
+- [iboss](https://www.google.com/search?q=iboss+careers) (Boston, security)
+- [ThreatX](https://www.google.com/search?q=ThreatX+careers) (Boston, security)
+
+## Fintech / proptech
+- [MineralTree / Global Payments](https://www.google.com/search?q=MineralTree+careers) (Cambridge, AP automation)
+- [Reggora](https://www.google.com/search?q=Reggora+careers) (Boston, appraisal software)
+- [Building Engines / JLL](https://www.google.com/search?q=Building+Engines+careers) (Boston, proptech)
+- [Numerated](https://www.google.com/search?q=Numerated+careers) (Boston, bank lending)
+
+## Supply chain / workforce SaaS
+- [TraceLink](https://www.google.com/search?q=TraceLink+careers) (North Reading, supply chain)
+- [e2open](https://www.google.com/search?q=e2open+careers) (supply chain)
+- [Beeline](https://www.google.com/search?q=Beeline+careers) (workforce/VMS)
+
+## Health / hardware (with digital products)
+- [Insulet](https://www.google.com/search?q=Insulet+careers) (Acton, Omnipod insulin pump + app)
+- [Boston Scientific](https://www.google.com/search?q=Boston+Scientific+careers) (Marlborough, medtech)
+- [Arcadia](https://www.google.com/search?q=Arcadia+healthcare+data+careers) (Boston, healthcare data)
+- [Bevi](https://www.google.com/search?q=Bevi+careers) (Boston, smart water)
+- [Bigbelly](https://www.google.com/search?q=Bigbelly+careers) (Needham, smart waste)
+
+---
+
 # Investment firm portfolio job boards
 
 Each of these VC/PE firms runs a single job board spanning all of its portfolio
