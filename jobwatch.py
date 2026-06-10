@@ -64,7 +64,7 @@ TITLE_EXCLUDE = [
 # Tokens marked "# verified" were confirmed live. The rest are best guesses
 # (usually the company slug). On the first run, the script prints a Warning
 # for any token that fails. Just fix or delete those lines. Companies that use
-# Workday have NO public API and are listed in README_WORKDAY.txt instead;
+# Workday have NO public API and are listed in README_WORKDAY.md instead;
 # set manual job alerts on those sites.
 COMPANIES = [
     # --- Boston metro: tech / SaaS / consumer ---

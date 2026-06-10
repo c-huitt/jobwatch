@@ -26,7 +26,7 @@ all in scope.
   Run with: `python3 jobwatch.py`
 - `seen.json` — tracks postings already reported. Do not hand-edit.
 - `new_jobs_YYYY-MM-DD.md` — dated output of new matches.
-- `README_WORKDAY.txt` — major employers on Workday or closed systems that
+- `README_WORKDAY.md` — major employers on Workday or closed systems that
   have no public API and need manual job alerts instead.
 - `jobwatch.yml` — GitHub Actions workflow for daily cloud runs.
 
@@ -51,7 +51,7 @@ A token is valid only when the URL returns JSON containing jobs, not a 404.
 - Ashby:      `https://api.ashbyhq.com/posting-api/job-board/TOKEN`
 
 When adding any company, test its endpoint first. If a company uses Workday or
-another closed system, put it in `README_WORKDAY.txt`, not in `COMPANIES`.
+another closed system, put it in `README_WORKDAY.md`, not in `COMPANIES`.
 
 ## Working conventions
 
