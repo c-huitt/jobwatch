@@ -42,12 +42,12 @@ TITLE_KEYWORDS = [
     "product design",
 ]
 
-# Location policy: keep only roles open to the US or Canada. A posting is kept
-# if it names a US/Canada location (even alongside other countries, e.g.
-# "London; New York; US"), or is remote with no country named (these are all
-# US-based companies, so a bare "Remote" is treated as US-eligible). Postings
-# that name ONLY non-US/Canada locations are dropped. See location_matches().
-# Set REQUIRE_LOCATION_MATCH = False to keep everything regardless of location.
+# Location policy: keep roles open to the US (US-only or US+Canada are both
+# fine). A posting is kept if it names a US location, even alongside Canada or
+# other countries (e.g. "Toronto; New York; US"), or is remote with no country
+# named (these are all US-based companies, so a bare "Remote" is US-eligible).
+# Canada-only postings, and any other non-US-only postings, are dropped.
+# See location_matches(). Set REQUIRE_LOCATION_MATCH = False to keep everything.
 REQUIRE_LOCATION_MATCH = True
 
 # Titles to exclude even if they match above (avoids senior-only noise and
@@ -279,6 +279,16 @@ COMPANIES = [
     {"name": "Strand Therapeutics","ats": "greenhouse","token": "strandtherapeutics"},
     {"name": "SharkNinja",       "ats": "greenhouse", "token": "sharkninjaoperatingllc"},
     {"name": "Reebok",           "ats": "workable",   "token": "reebok"},
+
+    # --- Boston / MA "best places to work" list sweep ---
+    {"name": "Constant Contact", "ats": "greenhouse", "token": "constantcontact"},
+    {"name": "Everbridge",       "ats": "lever",      "token": "everbridge"},
+    {"name": "mabl",             "ats": "greenhouse", "token": "mabl"},
+    {"name": "Own Up",           "ats": "ashby",      "token": "ownup"},
+    {"name": "Crayon",           "ats": "workable",   "token": "crayon"},
+    {"name": "Aircall",          "ats": "lever",      "token": "aircall"},
+    {"name": "Appcast",          "ats": "greenhouse", "token": "appcast"},
+    {"name": "Huntress",         "ats": "greenhouse", "token": "huntress"},
 
     # --- Remote-forward US: AI / ML ---
     {"name": "Decagon",          "ats": "ashby",      "token": "decagon"},
@@ -613,7 +623,8 @@ US_STRONG = (
 )
 CA_STRONG = (
     "canada", "canadian", "toronto", "vancouver", "montreal", "ottawa",
-    "calgary", "edmonton", "waterloo", "ontario", "quebec", "british columbia",
+    "calgary", "edmonton", "winnipeg", "mississauga", "halifax", "ontario",
+    "quebec", "british columbia", "alberta", "manitoba", "nova scotia",
 )
 # Non-US/Canada places. If one of these appears and no US/Canada signal does,
 # the posting is dropped.
@@ -656,17 +667,18 @@ def location_matches(job):
     loc = job["location"] or ""
     low = loc.lower()
 
-    # Strong US/Canada signal anywhere keeps the role, even if other countries
-    # are also listed (multi-location postings open to US candidates).
-    if (any(p in low for p in US_STRONG) or any(p in low for p in CA_STRONG)
-            or _USABBR_RE.search(loc)):
+    # Explicit US signal keeps the role, even if Canada or other countries are
+    # also listed (multi-location postings open to US candidates). US + Canada
+    # is fine; Canada-only is not.
+    if any(p in low for p in US_STRONG) or _USABBR_RE.search(loc):
         return True
 
-    # Otherwise, any foreign place named means it is not a US/Canada role.
-    if any(p in low for p in FOREIGN):
+    # No US signal. A Canada-only or foreign-only posting is not for a US-based
+    # job seeker, so drop it. (US + Canada was already kept by the check above.)
+    if any(p in low for p in CA_STRONG) or any(p in low for p in FOREIGN):
         return False
 
-    # Weak US signal: a state abbreviation, with no foreign place present.
+    # Weak US signal: a state abbreviation, with no Canada/foreign place present.
     if _STATE_RE.search(loc):
         return True
 
