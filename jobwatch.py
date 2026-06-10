@@ -277,6 +277,109 @@ COMPANIES = [
     {"name": "Valo Health",      "ats": "greenhouse", "token": "valohealth"},
     {"name": "Strand Therapeutics","ats": "greenhouse","token": "strandtherapeutics"},
 
+    # --- Remote-forward US: AI / ML ---
+    {"name": "Decagon",          "ats": "ashby",      "token": "decagon"},
+    {"name": "Cognition",        "ats": "ashby",      "token": "cognition"},
+    {"name": "Fireworks AI",     "ats": "ashby",      "token": "fireworksai"},
+    {"name": "Baseten",          "ats": "ashby",      "token": "baseten"},
+    {"name": "Modal",            "ats": "ashby",      "token": "modal"},
+    {"name": "Anyscale",         "ats": "ashby",      "token": "anyscale"},
+    {"name": "Pinecone",         "ats": "ashby",      "token": "pinecone"},
+    {"name": "Weaviate",         "ats": "ashby",      "token": "weaviate"},
+    {"name": "Labelbox",         "ats": "greenhouse", "token": "labelbox"},
+    {"name": "Snorkel AI",       "ats": "greenhouse", "token": "snorkelai"},
+    {"name": "Deepgram",         "ats": "ashby",      "token": "deepgram"},
+    {"name": "AssemblyAI",       "ats": "greenhouse", "token": "assemblyai"},
+    {"name": "Suno",             "ats": "ashby",      "token": "suno"},
+    {"name": "Typeface",         "ats": "greenhouse", "token": "typeface"},
+    {"name": "Gamma",            "ats": "ashby",      "token": "gamma"},
+
+    # --- Remote-forward US: dev tools / infra / data ---
+    {"name": "PostHog",          "ats": "ashby",      "token": "posthog"},
+    {"name": "Render",           "ats": "ashby",      "token": "render"},
+    {"name": "Railway",          "ats": "ashby",      "token": "railway"},
+    {"name": "Neon",             "ats": "lever",      "token": "neon"},
+    {"name": "WorkOS",           "ats": "ashby",      "token": "workos"},
+    {"name": "Resend",           "ats": "ashby",      "token": "resend"},
+    {"name": "Tailscale",        "ats": "greenhouse", "token": "tailscale"},
+    {"name": "ClickHouse",       "ats": "greenhouse", "token": "clickhouse"},
+    {"name": "Airbyte",          "ats": "ashby",      "token": "airbyte"},
+    {"name": "Metabase",         "ats": "lever",      "token": "metabase"},
+    {"name": "Sigma Computing",  "ats": "greenhouse", "token": "sigmacomputing"},
+    {"name": "Materialize",      "ats": "ashby",      "token": "materialize"},
+    {"name": "Hightouch",        "ats": "greenhouse", "token": "hightouch"},
+    {"name": "LaunchDarkly",     "ats": "greenhouse", "token": "launchdarkly"},
+    {"name": "Statsig",          "ats": "ashby",      "token": "statsig"},
+    {"name": "StackBlitz",       "ats": "greenhouse", "token": "stackblitz"},
+    {"name": "Coder",            "ats": "ashby",      "token": "coder"},
+    {"name": "n8n",              "ats": "ashby",      "token": "n8n"},
+    {"name": "Mural",            "ats": "ashby",      "token": "mural"},
+    {"name": "Lucid",            "ats": "greenhouse", "token": "lucidsoftware"},
+    {"name": "ClickUp",          "ats": "ashby",      "token": "clickup"},
+
+    # --- Remote-forward US: security ---
+    {"name": "Semgrep",          "ats": "ashby",      "token": "semgrep"},
+    {"name": "Chainguard",       "ats": "greenhouse", "token": "chainguard"},
+    {"name": "Orca Security",    "ats": "greenhouse", "token": "orcasecurity"},
+    {"name": "Abnormal Security","ats": "greenhouse", "token": "abnormalsecurity"},
+    {"name": "Tines",            "ats": "greenhouse", "token": "tines"},
+    {"name": "Torq",             "ats": "greenhouse", "token": "torq"},
+    {"name": "Bitwarden",        "ats": "greenhouse", "token": "bitwarden"},
+    {"name": "Doppler",          "ats": "ashby",      "token": "doppler"},
+
+    # --- Remote-forward US: product / analytics / research ---
+    {"name": "Sprig",            "ats": "ashby",      "token": "sprig"},
+    {"name": "FullStory",        "ats": "ashby",      "token": "fullstory"},
+    {"name": "Dovetail",         "ats": "ashby",      "token": "dovetail"},
+    {"name": "dscout",           "ats": "greenhouse", "token": "dscout"},
+    {"name": "Descript",         "ats": "greenhouse", "token": "descript"},
+
+    # --- Remote-forward US: fintech ---
+    {"name": "Justworks",        "ats": "greenhouse", "token": "justworks"},
+    {"name": "Workato",          "ats": "greenhouse", "token": "workato"},
+    {"name": "15Five",           "ats": "lever",      "token": "15five"},
+    {"name": "Novo",             "ats": "ashby",      "token": "novo"},
+    {"name": "Rho",              "ats": "ashby",      "token": "rho"},
+    {"name": "Capchase",         "ats": "ashby",      "token": "capchase"},
+    {"name": "Pilot",            "ats": "greenhouse", "token": "pilothq"},
+
+    # --- Remote-forward US: crypto / web3 ---
+    {"name": "Fireblocks",       "ats": "greenhouse", "token": "fireblocks"},
+    {"name": "Alchemy",          "ats": "ashby",      "token": "alchemy"},
+    {"name": "Magic Eden",       "ats": "ashby",      "token": "magiceden"},
+    {"name": "OpenSea",          "ats": "ashby",      "token": "opensea"},
+    {"name": "Phantom",          "ats": "ashby",      "token": "phantom"},
+    {"name": "Uniswap Labs",     "ats": "ashby",      "token": "uniswap"},
+    {"name": "Ripple",           "ats": "greenhouse", "token": "ripple"},
+    {"name": "ConsenSys",        "ats": "greenhouse", "token": "consensys"},
+    {"name": "Offchain Labs",    "ats": "lever",      "token": "offchainlabs"},
+
+    # --- Remote-forward US: healthtech ---
+    {"name": "Lyra Health",      "ats": "lever",      "token": "lyrahealth"},
+    {"name": "Talkspace",        "ats": "greenhouse", "token": "talkspace"},
+    {"name": "Cerebral",         "ats": "greenhouse", "token": "cerebral"},
+    {"name": "Sword Health",     "ats": "lever",      "token": "swordhealth"},
+    {"name": "Two Chairs",       "ats": "greenhouse", "token": "twochairs"},
+
+    # --- Remote-forward US: marketing / ecommerce ---
+    {"name": "Attentive",        "ats": "greenhouse", "token": "attentive"},
+    {"name": "Customer.io",      "ats": "greenhouse", "token": "customerio"},
+    {"name": "Postscript",       "ats": "greenhouse", "token": "postscript"},
+    {"name": "Gorgias",          "ats": "ashby",      "token": "gorgias"},
+    {"name": "Kustomer",         "ats": "ashby",      "token": "kustomer"},
+    {"name": "Recharge",         "ats": "ashby",      "token": "recharge"},
+    {"name": "Yotpo",            "ats": "greenhouse", "token": "yotpo"},
+
+    # --- Remote-forward US: boards found by digging for the real slug ---
+    {"name": "Wiz",              "ats": "greenhouse", "token": "wizinc"},
+    {"name": "SentinelOne",      "ats": "greenhouse", "token": "sentinellabs"},
+    {"name": "Cursor",           "ats": "ashby",      "token": "cursor"},
+    {"name": "Glean",            "ats": "greenhouse", "token": "gleanwork"},
+    {"name": "Cerebras",         "ats": "greenhouse", "token": "cerebrassystems"},
+    {"name": "Anchorage Digital","ats": "lever",      "token": "anchorage"},
+    {"name": "dbt Labs",         "ats": "greenhouse", "token": "dbtlabsinc"},
+    {"name": "Stream",           "ats": "ashby",      "token": "stream"},
+
     # --- Other ATS providers (SmartRecruiters / Workable / Recruitee / Breezy) ---
     # Add more here as you verify them. SmartRecruiters tokens are the exact,
     # case-sensitive company identifier (e.g. "Experian", not "experian").
