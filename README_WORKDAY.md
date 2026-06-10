@@ -29,15 +29,15 @@ to click the links directly.
 - [Fidelity](https://jobs.fidelity.com)
 - [State Street](https://careers.statestreet.com)
 - [Liberty Mutual](https://jobs.libertymutualgroup.com)
-- [John Hancock / Manulife](https://www.manulife.com/en/careers)
+- [John Hancock / Manulife](https://careers.manulife.com/global/en?adobe_mc=TS%3D1781115441%7CMCMID%3D56963666781455876682380098339298167397%7CMCORGID%3D37B127E253DB11F10A490D4E%2540AdobeOrg)
 - [MassMutual](https://careers.massmutual.com)
-- [Putnam Investments](https://www.google.com/search?q=Putnam+Investments+careers)
-- [Wellington Management](https://www.wellington.com/en/careers)
+- [Putnam Investments](https://wellington.wd5.myworkdayjobs.com/External)
+- [Wellington Management](https://wellington.wd5.myworkdayjobs.com/External)
 
 ## Biotech / pharma (digital + product design roles)
-- [Moderna](https://www.modernatx.com/careers)
-- [Biogen](https://www.biogen.com/careers)
-- [Vertex](https://www.vrtx.com/careers)
+- [Moderna](https://modernatx.wd1.myworkdayjobs.com/M_tx)
+- [Biogen](https://biibhr.wd3.myworkdayjobs.com/external)
+- [Vertex](https://vrtx.wd501.myworkdayjobs.com/vertex_careers)
 - [Takeda](https://www.takedajobs.com)
 
 ## Retail / consumer
