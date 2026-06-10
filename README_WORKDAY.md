@@ -6,14 +6,40 @@ designers but run on Workday or their own systems, with no public API the
 "UX", and click "create job alert" / "save search" so they email you when
 something opens. One-time setup, then it runs itself.
 
-Organized by **rough company size** (employee-count estimates, not exact),
-largest first, then by **industry** within each band. Some links are Google
-careers searches, used where there is no verified direct URL; they always
-resolve.
+Below the portfolio boards, employers are organized by **rough company size**
+(employee-count estimates, not exact), largest first, then by **industry**
+within each band. Some links are Google careers searches, used where there is
+no verified direct URL; they always resolve.
 
 Tip for viewing: open this file on GitHub
 ([README_WORKDAY.md](https://github.com/c-huitt/jobwatch/blob/main/README_WORKDAY.md))
 to click the links directly.
+
+---
+
+# Investment firm portfolio job boards
+
+Each of these VC/PE firms runs a single job board spanning all of its portfolio
+companies, one link surfaces design openings across dozens to hundreds of
+startups. Search "designer" / "UX" on each.
+
+- [Bain Capital Tech](https://jobs.baincapitaltechopportunities.com/jobs?titlePrefix=design) (pre-filtered to design)
+- [Bain Capital — all invested companies](https://jobs.baincapitaltechopportunities.com/jobs?program=bain-capital&titlePrefix=design) (pre-filtered to design)
+- [Summit Partners](https://jobs.summitpartners.com/)
+- [TA Associates](https://careers.ta.com/jobs)
+- [Andreessen Horowitz (a16z)](https://portfoliojobs.a16z.com)
+- [Sequoia Capital](https://jobs.sequoiacap.com)
+- [Bessemer Venture Partners](https://jobs.bvp.com)
+- [Greylock](https://jobs.greylock.com)
+- [Accel](https://jobs.accel.com)
+- [Lightspeed](https://jobs.lsvp.com)
+- [First Round](https://jobs.firstround.com)
+- [Battery Ventures](https://jobs.battery.com)
+- [Bain Capital Ventures](https://jobs.baincapitalventures.com)
+- [GV (Google Ventures)](https://jobs.gv.com)
+- [Insight Partners](https://jobs.insightpartners.com)
+- [Khosla Ventures](https://jobs.khoslaventures.com)
+- [Y Combinator — Work at a Startup](https://www.workatastartup.com)
 
 ---
 
@@ -52,11 +78,10 @@ to click the links directly.
 ## Life sciences / pharma
 - [Takeda](https://www.takedajobs.com)
 - [Thermo Fisher Scientific](https://jobs.thermofisher.com) (Waltham)
-- [Revvity](https://careers.revvity.com) (Waltham)
 - [Charles River Laboratories](https://jobs.criver.com)
 
 ## Healthcare systems
-- [Mass General Brigham](https://www.massgeneralbrigham.org/careers)
+- [Mass General Brigham](https://massgeneralbrigham.wd1.myworkdayjobs.com/MGBExternal)
 - [Beth Israel Lahey Health](https://www.bilh.org/careers)
 
 ## Retail / consumer
@@ -64,7 +89,7 @@ to click the links directly.
 - [TJX Companies](https://jobs.tjx.com) (Framingham)
 - [Staples](https://careers.staples.com) (Framingham)
 - [Chewy](https://careers.chewy.com) (Boston office)
-- [Wayfair](https://www.aboutwayfair.com/careers)
+- [Wayfair](https://www.wayfair.com/careers/jobs?teamCategoryIds=26&teamIds=1&locationIds=14&countryIds=1&stateIds=21) (pre-filtered to design)
 - [Gillette / P&G](https://www.pgcareers.com) (South Boston)
 - [Dunkin' / Inspire Brands](https://careers.inspirebrands.com) (Canton)
 
@@ -85,15 +110,15 @@ to click the links directly.
 # ~2,000 – 10,000 employees
 
 ## Consulting
-- [West Monroe](https://www.westmonroe.com/careers)
+- [West Monroe](https://www.westmonroe.com/careers/job-search)
 
 ## Finance / insurance
-- [MFS Investment Mgmt](https://www.mfs.com/careers)
+- [MFS Investment Mgmt](https://mfs.wd1.myworkdayjobs.com/MFS-Careers)
 - [Wellington Management](https://wellington.wd5.myworkdayjobs.com/External)
 - [Brown Brothers Harriman](https://www.bbh.com/careers)
 
 ## Software / SaaS
-- [PTC](https://www.ptc.com/en/careers)
+- [PTC](https://ptc.wd1.myworkdayjobs.com/PTC)
 - [Pegasystems](https://www.pega.com/about/careers)
 - [MathWorks](https://www.mathworks.com/company/jobs) (Natick)
 - [Progress Software](https://www.progress.com/company/careers) (Burlington)
@@ -102,7 +127,7 @@ to click the links directly.
 - [HashiCorp (IBM)](https://www.hashicorp.com/careers)
 
 ## Security / IT software
-- [Rapid7](https://www.rapid7.com/about/careers)
+- [Rapid7](https://careers.rapid7.com/)
 - [Datto (Kaseya)](https://www.google.com/search?q=Datto+careers)
 - [Buildium (RealPage)](https://www.google.com/search?q=Buildium+careers) (Boston, proptech)
 
@@ -127,14 +152,10 @@ to click the links directly.
 ## Retail / consumer / food
 - [New Balance](https://jobs.newbalance.com) (Boston)
 - [Bose](https://boseallaboutme.wd503.myworkdayjobs.com/Bose_Careers/jobs) (Framingham, audio hardware)
-- [SharkNinja](https://careers.sharkninja.com) (Needham)
-- [Converse](https://www.conversecareers.com) (Boston)
-- [Reebok](https://www.reebok.com/careers)
-- [The Boston Beer Company](https://www.bostonbeer.com/careers)
-- [Ocean Spray](https://www.oceanspray.com/careers) (Lakeville)
+- [Converse](https://careers.converse.com/jobs) (Boston)
 
 ## Edtech
-- [Cengage](https://careers.cengage.com)
+- [Cengage](https://cengage.wd5.myworkdayjobs.com/CengageNorthAmericaCareers)
 - [Curriculum Associates](https://www.curriculumassociates.com/careers) (Billerica)
 
 ## Gaming / media
@@ -152,12 +173,7 @@ to click the links directly.
 
 # ~500 – 2,000 employees
 
-## Consulting
-- [Analysis Group](https://www.analysisgroup.com/careers) (Boston HQ)
-- [Cornerstone Research](https://www.cornerstone.com/careers)
-
 ## Finance / insurance
-- [Bain Capital](https://www.baincapital.com/careers) (PE)
 - [Cambridge Associates](https://www.cambridgeassociates.com/careers)
 - [Loomis Sayles](https://www.loomissayles.com/careers)
 - [Putnam Investments](https://wellington.wd5.myworkdayjobs.com/External)
@@ -170,25 +186,18 @@ to click the links directly.
 - [WillowTree (TELUS Digital)](https://www.willowtreeapps.com/careers)
 - [Anaqua](https://www.google.com/search?q=Anaqua+careers) (Boston, IP software)
 - [Interactions](https://www.google.com/search?q=Interactions+LLC+careers) (Franklin, conversational AI)
-- [Validity](https://www.google.com/search?q=Validity+Inc+careers) (Boston, email/data)
+- [Validity](https://www.validity.com/careers/) (Boston, email/data)
 
 ## AI / data
-- [DataRobot](https://www.datarobot.com/careers)
+- [DataRobot](https://www.datarobot.com/careers/open-positions/)
 - [Grammarly](https://www.grammarly.com/careers)
 
 ## Security
-- [Snyk](https://snyk.io/careers)
-- [CloudHealth / Carbon Black (VMware)](https://www.google.com/search?q=VMware+Carbon+Black+careers) (Boston/Waltham)
+- [Snyk](https://snyk.io/careers/all-jobs/)
 
 ## Fintech / ecommerce
 - [Flywire](https://careers.flywire.com)
-- [Thrasio](https://www.google.com/search?q=Thrasio+careers) (ecommerce)
-
-## Biotech / pharma
-- [Alnylam](https://www.alnylam.com/careers)
-- [Intellia Therapeutics](https://www.intelliatx.com/careers)
-- [Sarepta Therapeutics](https://www.sarepta.com/careers)
-- [Foundation Medicine](https://www.foundationmedicine.com/careers)
+- [Thrasio](https://thrasio.wd1.myworkdayjobs.com/thrasio_careers) (ecommerce)
 
 ## Healthtech
 - [Devoted Health](https://www.devoted.com/careers)
@@ -204,8 +213,6 @@ to click the links directly.
 # Under ~500 employees
 
 ## Finance / investments
-- [Summit Partners](https://www.summitpartners.com) (VC/PE)
-- [TA Associates](https://www.ta.com/careers) (PE)
 - [HarbourVest](https://www.harbourvest.com/careers) (PE)
 - [Acadian Asset Mgmt](https://www.acadian-asset.com/careers)
 - [Arrowstreet Capital](https://www.arrowstreetcapital.com)
@@ -214,8 +221,8 @@ to click the links directly.
 
 ## AI / data
 - [Kensho (S&P Global)](https://spglobal.com/careers)
-- [Indico Data](https://www.google.com/search?q=Indico+Data+careers) (Boston)
-- [Basis Technologies](https://www.google.com/search?q=Basis+Technologies+Rosette+careers) (Somerville, NLP)
+- [Indico Data](https://indico.applytojob.com/apply) (Boston)
+- [Basis Technologies](https://www.basistechnologies.com/careers/#opportunities) (Somerville, NLP)
 - [Zapata Computing](https://www.google.com/search?q=Zapata+AI+careers) (Boston, quantum)
 - [Lexalytics](https://www.google.com/search?q=Lexalytics+InMoment+careers) (NLP)
 - [Cogito](https://www.google.com/search?q=Cogito+Corp+careers) (Boston)
@@ -224,6 +231,7 @@ to click the links directly.
 - [HqO](https://www.google.com/search?q=HqO+careers) (Boston, proptech)
 - [Catalant](https://www.google.com/search?q=Catalant+careers) (Boston, marketplace)
 - [Jebbit](https://www.google.com/search?q=Jebbit+careers) (Boston, marketing)
+- [Superhuman](https://superhuman.com/company/careers/jobs) (email, remote)
 
 ## Biotech / life sciences
 - [Editas Medicine](https://www.editasmedicine.com/careers)
@@ -237,7 +245,7 @@ to click the links directly.
 - [EVERFI](https://everfi.com/careers)
 
 ## Fintech
-- [Forward Financing](https://www.google.com/search?q=Forward+Financing+careers) (Boston)
+- [Forward Financing](https://www.forwardfinancing.com/careers/) (Boston)
 
 ## Agencies / design
 - [Upstatement](https://upstatement.com) (small Boston studio)
@@ -251,5 +259,5 @@ They aggregate many of the smaller startups not worth tracking individually.
 
 _Note: company sizes are rough estimates for grouping only. Careers links point
 to each company's general careers site; if a company reorganizes its site a link
-may redirect. Amwell and Genuine moved to the auto-tracker (`jobwatch.py`) once
-their public boards were confirmed._
+may redirect. Amwell, Genuine, SharkNinja, and Reebok moved to the auto-tracker
+(`jobwatch.py`) once their public boards were confirmed._

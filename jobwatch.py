@@ -277,6 +277,8 @@ COMPANIES = [
     {"name": "Chroma Medicine",  "ats": "greenhouse", "token": "chromamedicine"},
     {"name": "Valo Health",      "ats": "greenhouse", "token": "valohealth"},
     {"name": "Strand Therapeutics","ats": "greenhouse","token": "strandtherapeutics"},
+    {"name": "SharkNinja",       "ats": "greenhouse", "token": "sharkninjaoperatingllc"},
+    {"name": "Reebok",           "ats": "workable",   "token": "reebok"},
 
     # --- Remote-forward US: AI / ML ---
     {"name": "Decagon",          "ats": "ashby",      "token": "decagon"},
