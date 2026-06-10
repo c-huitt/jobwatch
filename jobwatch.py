@@ -18,6 +18,7 @@ No external libraries required (uses only the Python standard library).
 import html
 import json
 import os
+import re
 import sys
 import time
 import urllib.request
@@ -41,12 +42,12 @@ TITLE_KEYWORDS = [
     "product design",
 ]
 
-# Locations to keep. A job is kept if its location text contains any of these,
-# OR the job is flagged remote. Set REQUIRE_LOCATION_MATCH = False to keep all.
-LOCATION_KEYWORDS = [
-    "boston", "cambridge", "somerville", "watertown", "waltham", "newton",
-    "massachusetts", "ma", "remote", "united states", "us", "anywhere",
-]
+# Location policy: keep only roles open to the US or Canada. A posting is kept
+# if it names a US/Canada location (even alongside other countries, e.g.
+# "London; New York; US"), or is remote with no country named (these are all
+# US-based companies, so a bare "Remote" is treated as US-eligible). Postings
+# that name ONLY non-US/Canada locations are dropped. See location_matches().
+# Set REQUIRE_LOCATION_MATCH = False to keep everything regardless of location.
 REQUIRE_LOCATION_MATCH = True
 
 # Titles to exclude even if they match above (avoids senior-only noise and
@@ -468,15 +469,83 @@ def title_matches(title):
     return any(kw in t for kw in TITLE_KEYWORDS)
 
 
+# Strong, unambiguous US / Canada signals (case-insensitive substring).
+US_STRONG = (
+    "united states", "u.s.a", "u.s.", "usa", "north america",
+    "remote, us", "remote - us", "remote-us", "remote us", "us-remote",
+    "remote (us", "(us)", "us only", "anywhere in the us",
+    "new york", "nyc", "san francisco", "bay area", "los angeles", "seattle",
+    "boston", "cambridge", "somerville", "watertown", "waltham", "newton",
+    "chicago", "austin", "denver", "atlanta", "dallas", "houston", "portland",
+    "miami", "philadelphia", "phoenix", "san diego", "san jose", "minneapolis",
+    "detroit", "nashville", "charlotte", "raleigh", "pittsburgh", "salt lake",
+    "washington, d", "washington d", "brooklyn",
+)
+CA_STRONG = (
+    "canada", "canadian", "toronto", "vancouver", "montreal", "ottawa",
+    "calgary", "edmonton", "waterloo", "ontario", "quebec", "british columbia",
+)
+# Non-US/Canada places. If one of these appears and no US/Canada signal does,
+# the posting is dropped.
+FOREIGN = (
+    "united kingdom", " uk", "(uk", "london", "england", "scotland", "wales",
+    "ireland", "dublin", "germany", "berlin", "munich", "hamburg", "france",
+    "paris", "spain", "madrid", "barcelona", "portugal", "lisbon", "porto",
+    "netherlands", "amsterdam", "belgium", "brussels", "italy", "rome", "milan",
+    "switzerland", "zurich", "geneva", "austria", "vienna", "poland", "warsaw",
+    "krakow", "romania", "bucharest", "czech", "prague", "hungary", "budapest",
+    "sweden", "stockholm", "norway", "oslo", "denmark", "copenhagen", "finland",
+    "helsinki", "greece", "athens", "india", "bangalore", "bengaluru",
+    "hyderabad", "mumbai", "delhi", "gurgaon", "gurugram", "pune", "chennai",
+    "noida", "kolkata", "australia", "sydney", "melbourne", "brisbane", "perth",
+    "new zealand", "auckland", "singapore", "japan", "tokyo", "osaka", "china",
+    "shanghai", "beijing", "shenzhen", "hong kong", "taiwan", "taipei", "korea",
+    "seoul", "brazil", "brasil", "são paulo", "sao paulo", "rio de janeiro",
+    "mexico", "guadalajara", "argentina", "buenos aires", "colombia", "bogota",
+    "chile", "santiago", "peru", "lima", "israel", "tel aviv",
+    "united arab emirates", "dubai", "abu dhabi", "south africa",
+    "johannesburg", "cape town", "nigeria", "lagos", "kenya", "nairobi",
+    "egypt", "cairo", "turkey", "istanbul", "philippines", "manila",
+    "indonesia", "jakarta", "vietnam", "hanoi", "thailand", "bangkok",
+    "malaysia", "kuala lumpur", "pakistan", "bangladesh", "ukraine", "kyiv",
+    "serbia", "belgrade", "bulgaria", "croatia", "lithuania", "estonia",
+    "latvia", "europe", "emea", "apac", "latam",
+)
+# US state abbreviations as whole uppercase tokens (e.g. "Austin, TX"). Checked
+# against the original-case string so foreign words like "Germany" cannot match.
+_STATE_RE = re.compile(
+    r"\b(?:AL|AK|AZ|AR|CA|CO|CT|DE|FL|GA|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|"
+    r"MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|VA|"
+    r"WA|WV|WI|WY|DC)\b")
+_USABBR_RE = re.compile(r"\b(?:US|USA)\b")
+
+
 def location_matches(job):
     if not REQUIRE_LOCATION_MATCH:
         return True
-    if job["remote"]:
+    loc = job["location"] or ""
+    low = loc.lower()
+
+    # Strong US/Canada signal anywhere keeps the role, even if other countries
+    # are also listed (multi-location postings open to US candidates).
+    if (any(p in low for p in US_STRONG) or any(p in low for p in CA_STRONG)
+            or _USABBR_RE.search(loc)):
         return True
-    loc = job["location"].lower()
-    if not loc:
-        return True  # no location given, keep and let you judge
-    return any(kw in loc for kw in LOCATION_KEYWORDS)
+
+    # Otherwise, any foreign place named means it is not a US/Canada role.
+    if any(p in low for p in FOREIGN):
+        return False
+
+    # Weak US signal: a state abbreviation, with no foreign place present.
+    if _STATE_RE.search(loc):
+        return True
+
+    # No country named at all: bare "Remote" or empty. Treat as US-eligible
+    # since every tracked company is US-based.
+    if job["remote"] or not low.strip():
+        return True
+
+    return False
 
 
 def job_is_match(job):
