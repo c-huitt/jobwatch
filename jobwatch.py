@@ -55,6 +55,7 @@ REQUIRE_LOCATION_MATCH = True
 TITLE_EXCLUDE = [
     "staff", "principal", "lead", "manager", "director",
     "head of", "vp", "annotation", "data labeling", "labeler", "rater",
+    "mechanical",  # drops hardware "Product Design Mechanical Engineer" roles
 ]
 # Note: "senior" / "sr." are intentionally NOT excluded, so Senior roles show.
 # Add them back here if Senior postings become noise.
