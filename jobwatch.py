@@ -127,6 +127,7 @@ COMPANIES = [
 
     # --- Agencies / design studios (often hire earlier-career) ---
     {"name": "IDEO",             "ats": "greenhouse", "token": "ideo"},
+    {"name": "Genuine",          "ats": "greenhouse", "token": "genuine"},
 
     # --- Fintech / finance ---
     {"name": "Stripe",           "ats": "greenhouse", "token": "stripe"},
