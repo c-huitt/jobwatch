@@ -40,6 +40,10 @@ TITLE_KEYWORDS = [
     "interaction designer",
     "associate designer",
     "product design",
+    "ux design",
+    "ui design",
+    "experience design",
+    "interaction design",
 ]
 
 # Location policy: keep roles open to the US (US-only or US+Canada are both
