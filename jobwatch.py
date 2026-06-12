@@ -293,6 +293,8 @@ COMPANIES = [
     {"name": "Aircall",          "ats": "lever",      "token": "aircall"},
     {"name": "Appcast",          "ats": "greenhouse", "token": "appcast"},
     {"name": "Huntress",         "ats": "greenhouse", "token": "huntress"},
+    {"name": "Bevi",             "ats": "greenhouse", "token": "bevicareers"},
+    {"name": "Arcadia",          "ats": "lever",      "token": "arcadia"},
 
     # --- Remote-forward US: AI / ML ---
     {"name": "Decagon",          "ats": "ashby",      "token": "decagon"},

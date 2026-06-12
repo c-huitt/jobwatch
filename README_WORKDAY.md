@@ -47,11 +47,9 @@ split them into the size/industry sections below. Links are careers searches.
 - [Beeline](https://www.paycomonline.net/v4/ats/web.php/portal/E2977FA234007D604EEFED1AF20FE59C/career-page) (workforce/VMS)
 
 ## Health / hardware (with digital products)
-- [Insulet](https://www.google.com/search?q=Insulet+careers) (Acton, Omnipod insulin pump + app)
-- [Boston Scientific](https://www.google.com/search?q=Boston+Scientific+careers) (Marlborough, medtech)
-- [Arcadia](https://www.google.com/search?q=Arcadia+healthcare+data+careers) (Boston, healthcare data)
-- [Bevi](https://www.google.com/search?q=Bevi+careers) (Boston, smart water)
-- [Bigbelly](https://www.google.com/search?q=Bigbelly+careers) (Needham, smart waste)
+- [Insulet](https://insulet.wd5.myworkdayjobs.com/insuletcareers) (Acton, Omnipod insulin pump + app)
+- [Boston Scientific](https://bostonscientific.eightfold.ai/careers?start=0&pid=563602812769144&sort_by=hot) (Marlborough, medtech)
+- [Bigbelly](https://recruiting.paylocity.com/recruiting/jobs/All/f5c55b52-f133-4f71-bfb7-1a5ff9fb6c15/Big-Belly-Solar-LLC) (Needham, smart waste)
 
 ---
 
