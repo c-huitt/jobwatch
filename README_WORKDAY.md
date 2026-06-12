@@ -17,42 +17,6 @@ to click the links directly.
 
 ---
 
-# New additions (to sort)
-
-Staging area: Boston/MA "best places to work" companies that look like they hire
-UX/Product designers but have no queryable board. Pending review, then we will
-split them into the size/industry sections below. Links are careers searches.
-
-## Software / SaaS
-- [Workhuman](https://www.workhuman.com/company/careers/list/?location=89bd95c355900152efa4f6367b123459) (Framingham, HR/recognition)
-- [Dynatrace](https://www.dynatrace.com/careers/jobs/?office_locations=Boston&page=1) (Waltham, observability)
-- [Nexthink](https://nexthink.com/company/careers/jobs) (Boston, digital employee experience)
-- [Quickbase](https://careers.quickbase.com/jobs/) (Boston, low-code)
-- [Bullhorn](https://bullhorn.wd1.myworkdayjobs.com/BullhornCareers) (Boston, staffing software)
-- [Fuze / 8x8](https://www.8x8.com/careers/jobs) (Boston, comms)
-- [InsightSquared / Mediafly](https://www.google.com/search?q=Mediafly+careers) (Boston, sales analytics)
-- [Repsly](https://www.repsly.com/careers) (Boston, field sales)
-
-## Security
-- [Imprivata](https://www.imprivata.com/company/join-team) (Lexington, healthcare IT security)
-- [Nuance / Microsoft](https://www.google.com/search?q=Nuance+Microsoft+careers) (Burlington, speech AI)
-- [iboss](https://jobs.jobvite.com/iboss) (Boston, security)
-
-## Fintech / proptech
-- [Reggora](https://www.reggora.com/careers) (Boston, appraisal software)
-
-## Supply chain / workforce SaaS
-- [TraceLink](https://www.google.com/search?q=TraceLink+careers) (North Reading, supply chain)
-- [e2open](https://www.e2open.com/jobs/) (supply chain)
-- [Beeline](https://www.paycomonline.net/v4/ats/web.php/portal/E2977FA234007D604EEFED1AF20FE59C/career-page) (workforce/VMS)
-
-## Health / hardware (with digital products)
-- [Insulet](https://insulet.wd5.myworkdayjobs.com/insuletcareers) (Acton, Omnipod insulin pump + app)
-- [Boston Scientific](https://bostonscientific.eightfold.ai/careers?start=0&pid=563602812769144&sort_by=hot) (Marlborough, medtech)
-- [Bigbelly](https://recruiting.paylocity.com/recruiting/jobs/All/f5c55b52-f133-4f71-bfb7-1a5ff9fb6c15/Big-Belly-Solar-LLC) (Needham, smart waste)
-
----
-
 # Investment firm portfolio job boards
 
 Each of these VC/PE firms runs a single job board spanning all of its portfolio
@@ -144,6 +108,7 @@ design" on each.
 - [Takeda](https://www.takedajobs.com)
 - [Thermo Fisher Scientific](https://jobs.thermofisher.com) (Waltham)
 - [Charles River Laboratories](https://jobs.criver.com)
+- [Boston Scientific](https://bostonscientific.eightfold.ai/careers?start=0&pid=563602812769144&sort_by=hot) (Marlborough, medtech)
 
 ## Healthcare systems
 - [Mass General Brigham](https://massgeneralbrigham.wd1.myworkdayjobs.com/MGBExternal)
@@ -190,6 +155,8 @@ design" on each.
 - [GoTo / LogMeIn](https://www.goto.com/company/careers) (Boston)
 - [Rocket Software](https://www.rocketsoftware.com/careers) (Waltham)
 - [HashiCorp (IBM)](https://www.hashicorp.com/careers)
+- [Dynatrace](https://www.dynatrace.com/careers/jobs/?office_locations=Boston&page=1) (Waltham, observability)
+- [Fuze / 8x8](https://www.8x8.com/careers/jobs) (Boston, comms)
 
 ## Security / IT software
 - [Rapid7](https://careers.rapid7.com/)
@@ -205,6 +172,7 @@ design" on each.
 - [athenahealth](https://www.athenahealth.com/careers)
 - [Point32Health (Harvard Pilgrim / Tufts)](https://www.google.com/search?q=Point32Health+careers)
 - [Blue Cross Blue Shield of MA](https://careers.bluecrossma.org)
+- [Insulet](https://insulet.wd5.myworkdayjobs.com/insuletcareers) (Acton, medical devices + Omnipod app)
 
 ## Healthcare systems
 - [Dana-Farber Cancer Institute](https://careers.dana-farber.org)
@@ -252,6 +220,10 @@ design" on each.
 - [Anaqua](https://www.google.com/search?q=Anaqua+careers) (Boston, IP software)
 - [Interactions](https://www.google.com/search?q=Interactions+LLC+careers) (Franklin, conversational AI)
 - [Validity](https://www.validity.com/careers/) (Boston, email/data)
+- [Workhuman](https://www.workhuman.com/company/careers/list/?location=89bd95c355900152efa4f6367b123459) (Framingham, HR/recognition)
+- [Nexthink](https://nexthink.com/company/careers/jobs) (Boston, digital employee experience)
+- [Quickbase](https://careers.quickbase.com/jobs/) (Boston, low-code)
+- [Bullhorn](https://bullhorn.wd1.myworkdayjobs.com/BullhornCareers) (Boston, staffing software)
 
 ## AI / data
 - [DataRobot](https://www.datarobot.com/careers/open-positions/)
@@ -297,6 +269,8 @@ design" on each.
 - [Catalant](https://www.google.com/search?q=Catalant+careers) (Boston, marketplace)
 - [Jebbit](https://www.google.com/search?q=Jebbit+careers) (Boston, marketing)
 - [Superhuman](https://superhuman.com/company/careers/jobs) (email, remote)
+- [InsightSquared / Mediafly](https://www.google.com/search?q=Mediafly+careers) (Boston, sales analytics)
+- [Repsly](https://www.repsly.com/careers) (Boston, field sales)
 
 ## Biotech / life sciences
 - [Editas Medicine](https://www.editasmedicine.com/careers)
@@ -304,6 +278,7 @@ design" on each.
 
 ## Robotics / hardware
 - [Berkshire Grey](https://www.berkshiregrey.com/careers) (Bedford)
+- [Bigbelly](https://recruiting.paylocity.com/recruiting/jobs/All/f5c55b52-f133-4f71-bfb7-1a5ff9fb6c15/Big-Belly-Solar-LLC) (Needham, smart-waste IoT)
 
 ## Edtech
 - [Panorama Education](https://www.panoramaed.com/about/careers)
