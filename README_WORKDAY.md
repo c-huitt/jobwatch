@@ -37,7 +37,6 @@ split them into the size/industry sections below. Links are careers searches.
 - [Carbonite / OpenText](https://www.google.com/search?q=OpenText+careers) (Boston, backup)
 - [Veson Nautical](https://www.google.com/search?q=Veson+Nautical+careers) (Boston, maritime software)
 - [Repsly](https://www.google.com/search?q=Repsly+careers) (Boston, field sales)
-- [Microsoft](https://careers.microsoft.com/v2/global/en/home.html) (Cambridge / Burlington offices)
 
 ## Security
 - [Imprivata](https://www.imprivata.com/company/join-team) (Lexington, healthcare IT security)
@@ -84,6 +83,35 @@ startups. Search "designer" / "UX" on each.
 - [Insight Partners](https://jobs.insightpartners.com)
 - [Khosla Ventures](https://jobs.khoslaventures.com)
 - [Y Combinator — Work at a Startup](https://www.workatastartup.com)
+
+---
+
+# Big Tech
+
+Giant tech employers that run their own / Workday-style systems (no queryable
+board), most with Boston-area offices. Search "designer" / "UX" / "product
+design" on each.
+
+- [Apple](https://jobs.apple.com) (Cambridge office)
+- [Microsoft](https://careers.microsoft.com/v2/global/en/home.html) (Cambridge / Burlington)
+- [Amazon](https://www.amazon.jobs) (Boston offices)
+- [Google](https://www.google.com/about/careers/applications/) (Cambridge office)
+- [Meta](https://www.metacareers.com) (Boston office)
+- [Netflix](https://jobs.netflix.com)
+- [NVIDIA](https://www.nvidia.com/en-us/about-nvidia/careers/) (Westford office)
+- [Adobe](https://careers.adobe.com) (Waltham office)
+- [Salesforce](https://careers.salesforce.com) (Boston office)
+- [IBM](https://www.ibm.com/careers) (Cambridge office)
+- [Oracle](https://careers.oracle.com) (Burlington office)
+- [Intel](https://www.intel.com/content/www/us/en/jobs/jobs-at-intel.html) (Hudson office)
+- [Cisco](https://jobs.cisco.com) (Boxborough office)
+- [Uber](https://www.uber.com/careers)
+- [Airbnb](https://careers.airbnb.com)
+- [Spotify](https://www.lifeatspotify.com/jobs)
+- [TikTok / ByteDance](https://careers.tiktok.com)
+- [LinkedIn](https://careers.linkedin.com)
+- [Qualcomm](https://careers.qualcomm.com) (Boxborough office)
+- [Samsung](https://www.samsung.com/us/about-us/careers/)
 
 ---
 
