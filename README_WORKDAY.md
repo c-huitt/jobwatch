@@ -37,25 +37,20 @@ split them into the size/industry sections below. Links are careers searches.
 - [Carbonite / OpenText](https://www.google.com/search?q=OpenText+careers) (Boston, backup)
 - [Veson Nautical](https://www.google.com/search?q=Veson+Nautical+careers) (Boston, maritime software)
 - [Repsly](https://www.google.com/search?q=Repsly+careers) (Boston, field sales)
+- [Microsoft](https://careers.microsoft.com/v2/global/en/home.html) (Cambridge / Burlington offices)
 
 ## Security
-- [CyberArk](https://www.google.com/search?q=CyberArk+careers) (Newton, identity security)
-- [Imprivata](https://www.google.com/search?q=Imprivata+careers) (Lexington, healthcare IT security)
-- [Devo](https://www.google.com/search?q=Devo+security+careers) (Cambridge, security analytics)
+- [Imprivata](https://www.imprivata.com/company/join-team) (Lexington, healthcare IT security)
 - [Nuance / Microsoft](https://www.google.com/search?q=Nuance+Microsoft+careers) (Burlington, speech AI)
-- [iboss](https://www.google.com/search?q=iboss+careers) (Boston, security)
-- [ThreatX](https://www.google.com/search?q=ThreatX+careers) (Boston, security)
+- [iboss](https://jobs.jobvite.com/iboss) (Boston, security)
 
 ## Fintech / proptech
-- [MineralTree / Global Payments](https://www.google.com/search?q=MineralTree+careers) (Cambridge, AP automation)
-- [Reggora](https://www.google.com/search?q=Reggora+careers) (Boston, appraisal software)
-- [Building Engines / JLL](https://www.google.com/search?q=Building+Engines+careers) (Boston, proptech)
-- [Numerated](https://www.google.com/search?q=Numerated+careers) (Boston, bank lending)
+- [Reggora](https://www.reggora.com/careers) (Boston, appraisal software)
 
 ## Supply chain / workforce SaaS
 - [TraceLink](https://www.google.com/search?q=TraceLink+careers) (North Reading, supply chain)
-- [e2open](https://www.google.com/search?q=e2open+careers) (supply chain)
-- [Beeline](https://www.google.com/search?q=Beeline+careers) (workforce/VMS)
+- [e2open](https://www.e2open.com/jobs/) (supply chain)
+- [Beeline](https://www.paycomonline.net/v4/ats/web.php/portal/E2977FA234007D604EEFED1AF20FE59C/career-page) (workforce/VMS)
 
 ## Health / hardware (with digital products)
 - [Insulet](https://www.google.com/search?q=Insulet+careers) (Acton, Omnipod insulin pump + app)
