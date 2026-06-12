@@ -24,19 +24,14 @@ UX/Product designers but have no queryable board. Pending review, then we will
 split them into the size/industry sections below. Links are careers searches.
 
 ## Software / SaaS
-- [Workhuman](https://www.google.com/search?q=Workhuman+careers) (Framingham, HR/recognition)
-- [Dynatrace](https://www.google.com/search?q=Dynatrace+careers) (Waltham, observability)
-- [Nexthink](https://www.google.com/search?q=Nexthink+careers) (Boston, digital employee experience)
-- [Quickbase](https://www.google.com/search?q=Quickbase+careers) (Boston, low-code)
-- [Bullhorn](https://www.google.com/search?q=Bullhorn+careers) (Boston, staffing software)
-- [Fuze / 8x8](https://www.google.com/search?q=8x8+careers) (Boston, comms)
-- [Acoustic](https://www.google.com/search?q=Acoustic+marketing+careers) (Boston, marketing)
+- [Workhuman](https://www.workhuman.com/company/careers/list/?location=89bd95c355900152efa4f6367b123459) (Framingham, HR/recognition)
+- [Dynatrace](https://www.dynatrace.com/careers/jobs/?office_locations=Boston&page=1) (Waltham, observability)
+- [Nexthink](https://nexthink.com/company/careers/jobs) (Boston, digital employee experience)
+- [Quickbase](https://careers.quickbase.com/jobs/) (Boston, low-code)
+- [Bullhorn](https://bullhorn.wd1.myworkdayjobs.com/BullhornCareers) (Boston, staffing software)
+- [Fuze / 8x8](https://www.8x8.com/careers/jobs) (Boston, comms)
 - [InsightSquared / Mediafly](https://www.google.com/search?q=Mediafly+careers) (Boston, sales analytics)
-- [Alyce / Sendoso](https://www.google.com/search?q=Sendoso+careers) (Boston, gifting)
-- [Inkling](https://www.google.com/search?q=Inkling+learning+careers) (learning content)
-- [Carbonite / OpenText](https://www.google.com/search?q=OpenText+careers) (Boston, backup)
-- [Veson Nautical](https://www.google.com/search?q=Veson+Nautical+careers) (Boston, maritime software)
-- [Repsly](https://www.google.com/search?q=Repsly+careers) (Boston, field sales)
+- [Repsly](https://www.repsly.com/careers) (Boston, field sales)
 
 ## Security
 - [Imprivata](https://www.imprivata.com/company/join-team) (Lexington, healthcare IT security)
