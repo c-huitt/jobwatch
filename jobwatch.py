@@ -458,85 +458,18 @@ def _get_json(url, headers=None):
 
 
 # ----------------------------------------------------------------------------
-# Aggregator sources (job-board APIs that are not per-company). Each is OPTIONAL
-# and skips silently if its keys are not set as environment variables / GitHub
-# secrets. Their results flow through the same title + location filters and the
-# same seen.json dedupe as the company boards. The company name is tagged with
-# the source, e.g. "Acme (Adzuna)", so you can see where a role came from.
-#   Adzuna:   free key at https://developer.adzuna.com
-#             -> ADZUNA_APP_ID, ADZUNA_APP_KEY
-#   The Muse: works with no key; optional MUSE_API_KEY raises rate limits.
+# Aggregator sources (job-board APIs that are not per-company). OPTIONAL: skips
+# silently if its keys are not set as environment variables / GitHub secrets.
+# Results flow through the same title + location filters and the same seen.json
+# dedupe as the company boards, with the source tagged on the company name.
 #   USAJobs:  free key at https://developer.usajobs.gov
 #             -> USAJOBS_API_KEY, and USAJOBS_EMAIL (sent as User-Agent).
 # ----------------------------------------------------------------------------
 
-ADZUNA_QUERIES = [
-    "product designer", "ux designer", "ui designer", "product design",
-    "experience designer", "interaction designer",
-]
 USAJOBS_QUERIES = [
     "user experience designer", "ux designer", "product designer",
     "interaction designer",
 ]
-MUSE_PAGES = 5  # pages of the "Design and UX" category to scan per run
-
-
-def fetch_adzuna():
-    app_id = os.environ.get("ADZUNA_APP_ID", "").strip()
-    app_key = os.environ.get("ADZUNA_APP_KEY", "").strip()
-    if not app_id or not app_key:
-        return []
-    jobs = []
-    for phrase in ADZUNA_QUERIES:
-        url = (f"https://api.adzuna.com/v1/api/jobs/us/search/1"
-               f"?app_id={app_id}&app_key={app_key}&results_per_page=50"
-               f"&what_phrase={urllib.parse.quote(phrase)}&max_days_old=21"
-               f"&content-type=application/json")
-        data = _get_json(url)
-        for j in data.get("results", []):
-            loc = (j.get("location") or {}).get("display_name", "") or ""
-            company = (j.get("company") or {}).get("display_name", "") or "Unknown"
-            jobs.append({
-                "company": f"{company} (Adzuna)",
-                "id": f"adz-{j.get('id')}",
-                "title": html.unescape(j.get("title", "") or ""),
-                "location": loc,
-                "remote": "remote" in loc.lower(),
-                "url": j.get("redirect_url", "") or "",
-            })
-        time.sleep(0.3)
-    return jobs
-
-
-def fetch_themuse():
-    key = os.environ.get("MUSE_API_KEY", "").strip()
-    suffix = f"&api_key={key}" if key else ""
-    cat = urllib.parse.quote("Design and UX")
-    jobs = []
-    for page in range(1, MUSE_PAGES + 1):
-        url = f"https://www.themuse.com/api/public/jobs?category={cat}&page={page}{suffix}"
-        try:
-            data = _get_json(url)
-        except urllib.error.HTTPError as e:
-            if e.code in (400, 404):
-                break
-            raise
-        results = data.get("results", [])
-        if not results:
-            break
-        for j in results:
-            locs = ", ".join(l.get("name", "") for l in (j.get("locations") or []))
-            company = (j.get("company") or {}).get("name", "") or "Unknown"
-            jobs.append({
-                "company": f"{company} (The Muse)",
-                "id": f"muse-{j.get('id')}",
-                "title": j.get("name", "") or "",
-                "location": locs,
-                "remote": "remote" in locs.lower() or "flexible" in locs.lower(),
-                "url": (j.get("refs") or {}).get("landing_page", "") or "",
-            })
-        time.sleep(0.3)
-    return jobs
 
 
 def fetch_usajobs():
@@ -568,8 +501,6 @@ def fetch_usajobs():
 
 
 AGGREGATORS = [
-    ("Adzuna", fetch_adzuna),
-    ("The Muse", fetch_themuse),
     ("USAJobs", fetch_usajobs),
 ]
 
