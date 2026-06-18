@@ -21,6 +21,7 @@ import os
 import re
 import sys
 import time
+import urllib.parse
 import urllib.request
 import urllib.error
 from datetime import date
@@ -447,10 +448,130 @@ REQUEST_TIMEOUT = 20  # seconds
 # Fetchers — one per ATS, each returns a list of normalized job dicts
 # ----------------------------------------------------------------------------
 
-def _get_json(url):
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+def _get_json(url, headers=None):
+    h = {"User-Agent": USER_AGENT}
+    if headers:
+        h.update(headers)
+    req = urllib.request.Request(url, headers=h)
     with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
         return json.loads(resp.read().decode("utf-8"))
+
+
+# ----------------------------------------------------------------------------
+# Aggregator sources (job-board APIs that are not per-company). Each is OPTIONAL
+# and skips silently if its keys are not set as environment variables / GitHub
+# secrets. Their results flow through the same title + location filters and the
+# same seen.json dedupe as the company boards. The company name is tagged with
+# the source, e.g. "Acme (Adzuna)", so you can see where a role came from.
+#   Adzuna:   free key at https://developer.adzuna.com
+#             -> ADZUNA_APP_ID, ADZUNA_APP_KEY
+#   The Muse: works with no key; optional MUSE_API_KEY raises rate limits.
+#   USAJobs:  free key at https://developer.usajobs.gov
+#             -> USAJOBS_API_KEY, and USAJOBS_EMAIL (sent as User-Agent).
+# ----------------------------------------------------------------------------
+
+ADZUNA_QUERIES = [
+    "product designer", "ux designer", "ui designer", "product design",
+    "experience designer", "interaction designer",
+]
+USAJOBS_QUERIES = [
+    "user experience designer", "ux designer", "product designer",
+    "interaction designer",
+]
+MUSE_PAGES = 5  # pages of the "Design and UX" category to scan per run
+
+
+def fetch_adzuna():
+    app_id = os.environ.get("ADZUNA_APP_ID", "").strip()
+    app_key = os.environ.get("ADZUNA_APP_KEY", "").strip()
+    if not app_id or not app_key:
+        return []
+    jobs = []
+    for phrase in ADZUNA_QUERIES:
+        url = (f"https://api.adzuna.com/v1/api/jobs/us/search/1"
+               f"?app_id={app_id}&app_key={app_key}&results_per_page=50"
+               f"&what_phrase={urllib.parse.quote(phrase)}&max_days_old=21"
+               f"&content-type=application/json")
+        data = _get_json(url)
+        for j in data.get("results", []):
+            loc = (j.get("location") or {}).get("display_name", "") or ""
+            company = (j.get("company") or {}).get("display_name", "") or "Unknown"
+            jobs.append({
+                "company": f"{company} (Adzuna)",
+                "id": f"adz-{j.get('id')}",
+                "title": html.unescape(j.get("title", "") or ""),
+                "location": loc,
+                "remote": "remote" in loc.lower(),
+                "url": j.get("redirect_url", "") or "",
+            })
+        time.sleep(0.3)
+    return jobs
+
+
+def fetch_themuse():
+    key = os.environ.get("MUSE_API_KEY", "").strip()
+    suffix = f"&api_key={key}" if key else ""
+    cat = urllib.parse.quote("Design and UX")
+    jobs = []
+    for page in range(1, MUSE_PAGES + 1):
+        url = f"https://www.themuse.com/api/public/jobs?category={cat}&page={page}{suffix}"
+        try:
+            data = _get_json(url)
+        except urllib.error.HTTPError as e:
+            if e.code in (400, 404):
+                break
+            raise
+        results = data.get("results", [])
+        if not results:
+            break
+        for j in results:
+            locs = ", ".join(l.get("name", "") for l in (j.get("locations") or []))
+            company = (j.get("company") or {}).get("name", "") or "Unknown"
+            jobs.append({
+                "company": f"{company} (The Muse)",
+                "id": f"muse-{j.get('id')}",
+                "title": j.get("name", "") or "",
+                "location": locs,
+                "remote": "remote" in locs.lower() or "flexible" in locs.lower(),
+                "url": (j.get("refs") or {}).get("landing_page", "") or "",
+            })
+        time.sleep(0.3)
+    return jobs
+
+
+def fetch_usajobs():
+    key = os.environ.get("USAJOBS_API_KEY", "").strip()
+    email = os.environ.get("USAJOBS_EMAIL", "").strip()
+    if not key or not email:
+        return []
+    headers = {"Authorization-Key": key, "User-Agent": email, "Host": "data.usajobs.gov"}
+    jobs = []
+    for kw in USAJOBS_QUERIES:
+        url = (f"https://data.usajobs.gov/api/search?Keyword={urllib.parse.quote(kw)}"
+               f"&ResultsPerPage=50")
+        data = _get_json(url, headers=headers)
+        items = (data.get("SearchResult") or {}).get("SearchResultItems", [])
+        for it in items:
+            d = it.get("MatchedObjectDescriptor") or {}
+            loc = d.get("PositionLocationDisplay", "") or ""
+            org = d.get("OrganizationName", "") or "US Government"
+            jobs.append({
+                "company": f"{org} (USAJobs)",
+                "id": f"usa-{it.get('MatchedObjectId', '')}",
+                "title": d.get("PositionTitle", "") or "",
+                "location": loc,
+                "remote": "remote" in loc.lower() or "telework" in loc.lower(),
+                "url": d.get("PositionURI", "") or "",
+            })
+        time.sleep(0.3)
+    return jobs
+
+
+AGGREGATORS = [
+    ("Adzuna", fetch_adzuna),
+    ("The Muse", fetch_themuse),
+    ("USAJobs", fetch_usajobs),
+]
 
 
 def fetch_greenhouse(company):
@@ -860,6 +981,22 @@ def main():
                 new_matches.append(job)
                 seen.add(job["id"])
         time.sleep(0.5)  # be polite between companies
+
+    # Aggregator job-board APIs (Adzuna / The Muse / USAJobs). Each skips itself
+    # if its keys are unset, so this is a no-op until the secrets are added.
+    for label, fetch_fn in AGGREGATORS:
+        try:
+            agg_jobs = fetch_fn()
+        except urllib.error.HTTPError as e:
+            errors.append(f"{label}: HTTP {e.code}")
+            continue
+        except Exception as e:
+            errors.append(f"{label}: {e}")
+            continue
+        for job in agg_jobs:
+            if job_is_match(job) and job["id"] not in seen:
+                new_matches.append(job)
+                seen.add(job["id"])
 
     save_seen(seen)
 
