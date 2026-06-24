@@ -289,7 +289,6 @@ COMPANIES = [
     {"name": "Constant Contact", "ats": "greenhouse", "token": "constantcontact"},
     {"name": "Everbridge",       "ats": "lever",      "token": "everbridge"},
     {"name": "mabl",             "ats": "greenhouse", "token": "mabl"},
-    {"name": "Own Up",           "ats": "ashby",      "token": "ownup"},
     {"name": "Crayon",           "ats": "workable",   "token": "crayon"},
     {"name": "Aircall",          "ats": "lever",      "token": "aircall"},
     {"name": "Appcast",          "ats": "greenhouse", "token": "appcast"},
