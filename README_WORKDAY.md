@@ -72,16 +72,60 @@ design" on each.
 
 ---
 
+# Consulting & design firms
+
+Large consultancies and creative/design agencies. Many route designers through a
+design-arm careers page that differs from the parent site; those links are used
+where provided. Firms marked "auto-tracked" already feed your `jobwatch.py`
+digest; the rest are manual-alert. Search "designer" / "UX" / "product design".
+
+## Big 4 / accounting-origin
+- [PwC](https://jobs.us.pwc.com)
+- [Deloitte Digital](https://www.deloittedigital.com/us/en/careers.html)
+- [Deloitte (full job search)](https://apply.deloitte.com/en_US/careers/SearchJobs)
+- [EY](https://www.ey.com/en_us/careers)
+- [KPMG](https://www.kpmguscareers.com)
+
+## Strategy / management consulting
+- [McKinsey](https://www.mckinsey.com/careers/search-jobs)
+- [BCG (incl. BCG X)](https://careers.bcg.com) (Boston HQ)
+- [Bain](https://www.bain.com/careers) (Boston HQ)
+- [Accenture Song (creative & design)](https://www.accenture.com/us-en/careers/explore-careers/area-of-interest/creative-design-careers)
+- [Accenture (full search)](https://www.accenture.com/us-en/careers/jobsearch)
+- [Slalom](https://www.slalom.com/careers)
+
+## Tech & IT services (large design arms)
+- [IBM iX](https://ibmix.de/en/career)
+- [frog (Capgemini Invent)](https://www.frog.co/careers)
+- [Capgemini](https://www.capgemini.com/careers)
+- [Designit (Wipro)](https://www.designit.com/jobs)
+- [WONGDOODY (Infosys)](https://www.wongdoody.com/careers) — auto-tracked
+- [EPAM / EPAM Continuum](https://careers.epam.com/en/jobs)
+- [Publicis Sapient](https://www.publicissapient.com/careers)
+- [Globant](https://www.globant.com/careers)
+- [Cognizant](https://careers.cognizant.com)
+- [Thoughtworks](https://www.thoughtworks.com/careers) — auto-tracked
+
+## Design-led consultancies & agencies
+- [IDEO](https://www.ideo.com/careers) — auto-tracked
+- [R/GA](https://rga.com/careers) — auto-tracked
+- [AKQA](https://www.akqa.com/careers) — auto-tracked
+- [Huge](https://www.hugeinc.com/careers) — auto-tracked
+- [WPP](https://www.wpp.com/en/careers) — auto-tracked
+- [DEPT](https://www.deptagency.com/careers) — auto-tracked
+- [thoughtbot](https://thoughtbot.com/jobs)
+
+---
+
 # ~10,000+ employees
 
 ## Consulting
-- [Bain & Company](https://www.bain.com/careers) (Boston HQ)
-- [Boston Consulting Group (BCG)](https://careers.bcg.com) (Boston HQ)
-- [McKinsey & Company](https://www.mckinsey.com/careers)
-- [Slalom](https://www.slalom.com/careers)
 - [Booz Allen Hamilton](https://careers.boozallen.com)
 - [ZS Associates](https://www.zs.com/careers)
 - [Guidehouse](https://guidehouse.com/careers)
+
+(McKinsey, BCG, Bain, Slalom, EPAM, Publicis Sapient are in the
+**Consulting & design firms** section above.)
 
 ## Finance / insurance
 - [Fidelity](https://jobs.fidelity.com)
@@ -124,8 +168,6 @@ design" on each.
 - [Dunkin' / Inspire Brands](https://careers.inspirebrands.com) (Canton)
 
 ## Agencies / media
-- [Publicis Sapient](https://careers.publicissapient.com)
-- [EPAM (incl. former Continuum)](https://www.epam.com/careers)
 - [dentsu / Isobar](https://dentsuaegis.wd3.myworkdayjobs.com/en-US/DAN_GLOBAL/?source=Dentsu)
 
 ## Universities

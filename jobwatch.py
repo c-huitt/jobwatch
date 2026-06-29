@@ -133,6 +133,12 @@ COMPANIES = [
     # --- Agencies / design studios (often hire earlier-career) ---
     {"name": "IDEO",             "ats": "greenhouse", "token": "ideo"},
     {"name": "Genuine",          "ats": "greenhouse", "token": "genuine"},
+    {"name": "Huge",             "ats": "greenhouse", "token": "hugeinc"},
+    {"name": "R/GA",             "ats": "greenhouse", "token": "rga"},
+    {"name": "AKQA",             "ats": "greenhouse", "token": "akqa"},
+    {"name": "WONGDOODY",        "ats": "greenhouse", "token": "wongdoody"},
+    {"name": "WPP",              "ats": "greenhouse", "token": "wpp"},
+    {"name": "DEPT",             "ats": "greenhouse", "token": "dept"},
 
     # --- Fintech / finance ---
     {"name": "Stripe",           "ats": "greenhouse", "token": "stripe"},
@@ -394,7 +400,7 @@ COMPANIES = [
     {"name": "SentinelOne",      "ats": "greenhouse", "token": "sentinellabs"},
     {"name": "Cursor",           "ats": "ashby",      "token": "cursor"},
     {"name": "Glean",            "ats": "greenhouse", "token": "gleanwork"},
-    {"name": "Cerebras",         "ats": "greenhouse", "token": "cerebrassystems"},
+    {"name": "Cerebras",         "ats": "ashby",      "token": "cerebras"},
     {"name": "Anchorage Digital","ats": "lever",      "token": "anchorage"},
     {"name": "dbt Labs",         "ats": "greenhouse", "token": "dbtlabsinc"},
     {"name": "Stream",           "ats": "ashby",      "token": "stream"},
