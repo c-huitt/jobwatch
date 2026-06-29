@@ -115,6 +115,45 @@ digest; the rest are manual-alert. Search "designer" / "UX" / "product design".
 - [DEPT](https://www.deptagency.com/careers) — auto-tracked
 - [thoughtbot](https://thoughtbot.com/jobs)
 
+## Product design studios
+- [MetaLab](https://www.metalab.com/careers) — auto-tracked
+- [Fantasy](https://fantasy.co/careers) — auto-tracked
+- [Clay](https://www.clay.global/careers) — auto-tracked
+- [Instrument](https://www.instrument.com/careers) — auto-tracked
+- [ustwo](https://ustwo.com/join-us)
+- [Smart Design](https://smartdesignworldwide.com/careers)
+- [Big Human](https://www.bighuman.com/careers)
+- [WillowTree / TELUS Digital](https://www.willowtreeapps.com/careers)
+
+## Digital / experience agencies
+- [Code and Theory](https://www.codeandtheory.com/careers) — auto-tracked
+- [Critical Mass](https://www.criticalmass.com/jobs) — auto-tracked
+- [Media.Monks](https://www.monks.com/careers/department/design) — auto-tracked
+- [Bounteous](https://www.bounteous.com/careers) — auto-tracked
+- [VML (WPP)](https://www.vml.com/careers)
+- [Rightpoint (Genpact)](https://www.rightpoint.com/careers)
+
+## Civic / public-interest tech
+- [Nava PBC](https://www.navapbc.com/careers) — auto-tracked
+- [Coforma](https://coforma.io/careers)
+- [Ad Hoc](https://adhoc.team/careers)
+- [Truss](https://truss.works/careers)
+
+## Defense / cleared
+- [Booz Allen (Digital)](https://careers.boozallen.com/teams/digital)
+- [Accenture Federal Services](https://www.accenture.com/us-en/careers/federal)
+
+## Boston-area studios
+- [Cantina](https://cantina.co/careers) — auto-tracked
+- [Mad*Pow](https://www.madpow.com/careers)
+- [DockYard](https://dockyard.com/careers)
+- [Upstatement](https://upstatement.com/careers)
+
+## Brand / strategy / innovation
+- [Prophet](https://www.prophet.com/careers) — auto-tracked
+- [Lippincott](https://www.lippincott.com/careers)
+- [Pentagram](https://www.pentagram.com) (no formal board, direct outreach)
+
 ---
 
 # ~10,000+ employees
@@ -258,7 +297,6 @@ digest; the rest are manual-alert. Search "designer" / "UX" / "product design".
 
 ## Software / SaaS
 - [Brightcove](https://www.brightcove.com/en/company/careers) (Boston, video)
-- [WillowTree (TELUS Digital)](https://www.willowtreeapps.com/careers)
 - [Anaqua](https://www.google.com/search?q=Anaqua+careers) (Boston, IP software)
 - [Interactions](https://www.google.com/search?q=Interactions+LLC+careers) (Franklin, conversational AI)
 - [Validity](https://www.validity.com/careers/) (Boston, email/data)
@@ -328,9 +366,6 @@ digest; the rest are manual-alert. Search "designer" / "UX" / "product design".
 
 ## Fintech
 - [Forward Financing](https://www.forwardfinancing.com/careers/) (Boston)
-
-## Agencies / design
-- [Upstatement](https://upstatement.com) (small Boston studio)
 
 ---
 

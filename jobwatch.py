@@ -139,6 +139,16 @@ COMPANIES = [
     {"name": "WONGDOODY",        "ats": "greenhouse", "token": "wongdoody"},
     {"name": "WPP",              "ats": "greenhouse", "token": "wpp"},
     {"name": "DEPT",             "ats": "greenhouse", "token": "dept"},
+    {"name": "MetaLab",          "ats": "greenhouse", "token": "metalab"},
+    {"name": "Fantasy",          "ats": "lever",      "token": "fantasy"},
+    {"name": "Clay",             "ats": "workable",   "token": "clayglobal"},
+    {"name": "Code and Theory",  "ats": "greenhouse", "token": "codeandtheory"},
+    {"name": "Critical Mass",    "ats": "greenhouse", "token": "criticalmass"},
+    {"name": "Media.Monks",      "ats": "greenhouse", "token": "monks"},
+    {"name": "Bounteous",        "ats": "lever",      "token": "bounteous"},
+    {"name": "Nava PBC",         "ats": "greenhouse", "token": "navapbc"},
+    {"name": "Cantina",          "ats": "ashby",      "token": "cantina"},
+    {"name": "Prophet",          "ats": "greenhouse", "token": "prophet"},
 
     # --- Fintech / finance ---
     {"name": "Stripe",           "ats": "greenhouse", "token": "stripe"},
