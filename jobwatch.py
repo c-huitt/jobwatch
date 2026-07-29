@@ -470,6 +470,20 @@ COMPANIES = [
     {"name": "Palantir",         "ats": "lever",      "token": "palantir"},
     {"name": "Twitch",           "ats": "greenhouse", "token": "twitch"},
     {"name": "Anduril",          "ats": "greenhouse", "token": "andurilindustries"},
+    {"name": "Zuora",            "ats": "greenhouse", "token": "zuora"},
+
+    # --- SF Bay Area: AI / ML ---
+    {"name": "Together AI",      "ats": "greenhouse", "token": "togetherai"},
+    {"name": "xAI",              "ats": "greenhouse", "token": "xai"},
+
+    # --- SF Bay Area: gaming ---
+    {"name": "Roblox",           "ats": "greenhouse", "token": "roblox"},
+
+    # --- SF Bay Area: health ---
+    {"name": "Collective Health","ats": "greenhouse", "token": "collectivehealth"},
+
+    # --- SF Bay Area: climate / materials ---
+    {"name": "Redwood Materials","ats": "greenhouse", "token": "redwoodmaterials"},
 
     # --- SF Bay Area: consumer / retail ---
     {"name": "Stitch Fix",       "ats": "greenhouse", "token": "stitchfix"},
