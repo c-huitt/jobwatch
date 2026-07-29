@@ -344,7 +344,6 @@ COMPANIES = [
     {"name": "Materialize",      "ats": "ashby",      "token": "materialize"},
     {"name": "Hightouch",        "ats": "greenhouse", "token": "hightouch"},
     {"name": "LaunchDarkly",     "ats": "greenhouse", "token": "launchdarkly"},
-    {"name": "Statsig",          "ats": "ashby",      "token": "statsig"},
     {"name": "StackBlitz",       "ats": "greenhouse", "token": "stackblitz"},
     {"name": "Coder",            "ats": "ashby",      "token": "coder"},
     {"name": "n8n",              "ats": "ashby",      "token": "n8n"},
@@ -412,7 +411,6 @@ COMPANIES = [
     {"name": "Glean",            "ats": "greenhouse", "token": "gleanwork"},
     {"name": "Cerebras",         "ats": "ashby",      "token": "cerebras"},
     {"name": "Anchorage Digital","ats": "lever",      "token": "anchorage"},
-    {"name": "dbt Labs",         "ats": "greenhouse", "token": "dbtlabsinc"},
     {"name": "Stream",           "ats": "ashby",      "token": "stream"},
 
     # --- Other ATS providers (SmartRecruiters / Workable / Recruitee / Breezy) ---
@@ -453,6 +451,28 @@ COMPANIES = [
     {"name": "Amwell",           "ats": "greenhouse", "token": "amwell"},
     {"name": "Biofourmis",       "ats": "greenhouse", "token": "biofourmis"},
     {"name": "Openly",           "ats": "greenhouse", "token": "openly"},
+
+    # --- NYC area: media / publishing ---
+    {"name": "New York Times",   "ats": "greenhouse", "token": "thenewyorktimes"},
+    {"name": "BuzzFeed",         "ats": "greenhouse", "token": "buzzfeed"},
+    {"name": "Spotify",          "ats": "lever",      "token": "spotify"},
+
+    # --- NYC area: consumer / retail / fashion ---
+    {"name": "Rent the Runway",  "ats": "greenhouse", "token": "renttherunway"},
+    {"name": "Harry's",          "ats": "greenhouse", "token": "harrys"},
+    {"name": "Bombas",           "ats": "greenhouse", "token": "bombas"},
+
+    # --- NYC area: health / wellness ---
+    {"name": "Zocdoc",           "ats": "greenhouse", "token": "zocdoc"},
+
+    # --- SF Bay Area: tech / data / defense ---
+    {"name": "Block (Square)",   "ats": "greenhouse", "token": "block"},
+    {"name": "Palantir",         "ats": "lever",      "token": "palantir"},
+    {"name": "Twitch",           "ats": "greenhouse", "token": "twitch"},
+    {"name": "Anduril",          "ats": "greenhouse", "token": "andurilindustries"},
+
+    # --- SF Bay Area: consumer / retail ---
+    {"name": "Stitch Fix",       "ats": "greenhouse", "token": "stitchfix"},
 ]
 
 SEEN_FILE = "seen.json"
