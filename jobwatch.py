@@ -487,6 +487,61 @@ COMPANIES = [
 
     # --- SF Bay Area: consumer / retail ---
     {"name": "Stitch Fix",       "ats": "greenhouse", "token": "stitchfix"},
+
+    # ========================================================================
+    # PE / VC portfolio companies (US presence) — sourced from the major
+    # investment-firm job boards (a16z, Sequoia, Bessemer, Insight, Accel,
+    # Lightspeed, Battery, Khosla, Bain, Summit, plus Thoma Bravo / Vista /
+    # Silver Lake buyouts). Only those with a queryable public ATS board.
+    # ========================================================================
+
+    # --- Cybersecurity ---
+    {"name": "Netskope",         "ats": "greenhouse", "token": "netskope"},
+    {"name": "Cato Networks",    "ats": "greenhouse", "token": "catonetworks"},
+    {"name": "Rubrik",           "ats": "greenhouse", "token": "rubrik"},
+    {"name": "Sophos",           "ats": "lever",      "token": "sophos"},
+    {"name": "Ping Identity",    "ats": "greenhouse", "token": "pingidentity"},
+    {"name": "Tanium",           "ats": "greenhouse", "token": "tanium"},
+    {"name": "Jamf",             "ats": "greenhouse", "token": "jamf"},
+    {"name": "Forter",           "ats": "greenhouse", "token": "forter"},
+    {"name": "Coalition",        "ats": "greenhouse", "token": "coalition"},
+    {"name": "Transmit Security","ats": "greenhouse", "token": "transmitsecurity"},
+    {"name": "Expel",            "ats": "greenhouse", "token": "expel"},
+
+    # --- Enterprise SaaS / data / dev tools ---
+    {"name": "Anaplan",          "ats": "greenhouse", "token": "anaplan"},
+    {"name": "Qualtrics",        "ats": "greenhouse", "token": "qualtrics"},
+    {"name": "JFrog",            "ats": "greenhouse", "token": "jfrog"},
+    {"name": "Coupa",            "ats": "lever",      "token": "coupa"},
+    {"name": "Bloomreach",       "ats": "greenhouse", "token": "bloomreach"},
+    {"name": "Temporal",         "ats": "greenhouse", "token": "temporaltechnologies"},
+    {"name": "Sumo Logic",       "ats": "greenhouse", "token": "sumologic"},
+    {"name": "Sisense",          "ats": "greenhouse", "token": "sisense"},
+    {"name": "AvePoint",         "ats": "greenhouse", "token": "avepoint"},
+    {"name": "SolarWinds",       "ats": "greenhouse", "token": "solarwinds"},
+    {"name": "Gong",             "ats": "greenhouse", "token": "gongio"},
+    {"name": "Sourcegraph",      "ats": "greenhouse", "token": "sourcegraph91"},
+    {"name": "Invoca",           "ats": "greenhouse", "token": "invoca"},
+    {"name": "Coactive",         "ats": "greenhouse", "token": "coactive"},
+    {"name": "Odaseva",          "ats": "lever",      "token": "odaseva"},
+
+    # --- Fintech / insurtech ---
+    {"name": "Ethos",            "ats": "greenhouse", "token": "ethoslife"},
+    {"name": "Melio",            "ats": "greenhouse", "token": "melio"},
+    {"name": "Alloy",            "ats": "greenhouse", "token": "alloy"},
+
+    # --- Health ---
+    {"name": "One Medical",      "ats": "greenhouse", "token": "onemedical"},
+    {"name": "Clover Health",    "ats": "greenhouse", "token": "cloverhealth"},
+    {"name": "Honor",            "ats": "greenhouse", "token": "honor"},
+
+    # --- Aerospace / defense ---
+    {"name": "Rocket Lab",       "ats": "greenhouse", "token": "rocketlab"},
+    {"name": "Vannevar Labs",    "ats": "greenhouse", "token": "vannevarlabs"},
+
+    # --- HR / benefits / education ---
+    {"name": "Gympass (Wellhub)","ats": "greenhouse", "token": "gympass"},
+    {"name": "Guild",            "ats": "greenhouse", "token": "guild"},
 ]
 
 SEEN_FILE = "seen.json"
