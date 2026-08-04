@@ -43,6 +43,56 @@ startups. Search "designer" / "UX" on each.
 
 ---
 
+# PE/VC-backed tech (closed ATS — set a manual alert)
+
+Well-known portfolio companies of the major investment firms above that hire
+designers but run on Workday or their own systems (no queryable API), so they
+cannot be auto-tracked by `jobwatch.py`. Open each, search "designer" / "UX" /
+"product design", and save a job alert.
+
+## Security
+- [CrowdStrike](https://www.crowdstrike.com/careers/)
+- [Palo Alto Networks](https://jobs.paloaltonetworks.com/)
+- [Snyk](https://snyk.io/careers/)
+- [SailPoint](https://www.sailpoint.com/company/careers)
+- [Proofpoint](https://www.proofpoint.com/us/company/careers)
+
+## Enterprise SaaS / data / dev tools
+- [ServiceNow](https://careers.servicenow.com/)
+- [Splunk (Cisco)](https://www.splunk.com/en_us/careers.html)
+- [Unity](https://careers.unity.com/)
+- [UiPath](https://www.uipath.com/company/careers)
+- [Zoom](https://careers.zoom.us/)
+- [monday.com](https://monday.com/careers/)
+- [DigitalOcean](https://www.digitalocean.com/careers)
+- [Docker](https://www.docker.com/career-openings/)
+- [HashiCorp (IBM)](https://www.hashicorp.com/careers)
+- [Nutanix](https://www.nutanix.com/company/careers)
+- [Cloudera](https://www.cloudera.com/about/careers.html)
+- [Redis](https://redis.io/careers/)
+- [Pluralsight](https://www.pluralsight.com/careers)
+- [Gainsight](https://www.gainsight.com/company/careers/)
+- [ServiceTitan](https://www.servicetitan.com/careers)
+- [Astronomer](https://www.astronomer.io/careers/)
+- [Ironclad](https://ironcladapp.com/careers/)
+
+## Productivity / design tools
+- [Rippling](https://www.rippling.com/careers)
+- [Retool](https://retool.com/careers)
+- [Grammarly](https://www.grammarly.com/careers)
+- [Miro](https://miro.com/careers/)
+
+## Fintech / consumer
+- [Klarna](https://www.klarna.com/careers/)
+- [Whatnot](https://careers.whatnot.com/)
+
+## Aerospace / defense / hardware
+- [Applied Intuition](https://www.appliedintuition.com/careers)
+- [Flock Safety](https://www.flocksafety.com/careers)
+- [Skydio](https://www.skydio.com/careers)
+
+---
+
 # Big Tech
 
 Giant tech employers that run their own / Workday-style systems (no queryable
