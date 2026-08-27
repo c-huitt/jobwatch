@@ -43,16 +43,16 @@ Apply here first. These have both a genuine UR pipeline and enough design
 headcount that design reqs actually appear.
 
 - **NVIDIA** — [University Recruiting](https://www.nvidia.com/en-us/about-nvidia/careers/university-recruiting/) (verified). New College Graduate (NCG) program. Westford office. You already have an application in flight here.
-- **Adobe** — [Adobe Life: University](https://www.google.com/search?q=Adobe+university+careers+early+career+design). Opens just after Labor Day. Waltham office. Adobe is one of the few places where a design UR req is genuinely likely.
+- **Adobe** — [University Jobs](https://careers.adobe.com/us/en/c/university-jobs). Opens just after Labor Day. Waltham office. Adobe is one of the few places where a design UR req is genuinely likely.
 - **Google** — [Students & Grads](https://www.google.com/about/careers/applications/students). Filter to "Early career" + Design. Cambridge office.
 - **Microsoft** — [Students & Recent Graduates](https://careers.microsoft.com/v2/global/en/students-and-graduates). Cambridge / Burlington. Look for "Product Designer, University Grad."
 - **IBM** — [Entry Level & Student Careers](https://www.ibm.com/careers/early-career). IBM iX and IBM Design both run early-career tracks. Cambridge office. IBM Design historically ran one of the largest structured design onboarding programs in the industry.
 - **Salesforce** — [Futureforce](https://www.salesforce.com/company/careers/university-recruiting/). Opens in August, so this one is live right now. Boston office.
-- **Intuit** — [Students & New Grads](https://www.google.com/search?q=Intuit+university+careers+early+career+design). Strong, well-known design org and a real design UR track.
+- **Intuit** — [Early Career](https://www.intuit.com/careers/programs/early-career/). Strong, well-known design org and a real design UR track.
 - **Meta** — [University Careers](https://www.metacareers.com/careerprogrograms/students). Boston office. Filter to Design.
 - **Apple** — [Students](https://www.apple.com/careers/us/students.html). Cambridge office.
 - **Amazon** — [Student Programs](https://www.amazon.jobs/content/en/career-programs/student-programs). Boston + North Reading (Robotics). Amazon runs a large UX design early-career pipeline.
-- **Workday** — [Emerging Talent](https://www.google.com/search?q=Workday+emerging+talent+early+career). Worth noting given how many employers on your other list run on their ATS.
+- **Workday** — [Careers](https://www.workday.com/en-us/company/careers.html). Worth noting given how many employers on your other list run on their ATS.
 - **Databricks** — [University Recruiting](https://www.databricks.com/company/careers/university-recruiting). Confirmed running a 2027-start cohort.
 
 ---
@@ -61,13 +61,13 @@ headcount that design reqs actually appear.
 
 Set an alert, check in September, don't invest heavily.
 
-- **Cisco** — [Early in Career](https://www.google.com/search?q=Cisco+early+in+career+university+recruiting). Boxborough office.
+- **Cisco** — [Early in Career](https://www.cisco.com/c/en/us/about/careers/we-are-cisco/early-in-career.html). Boxborough office.
 - **Dell / EMC** — [Students & Graduates](https://jobs.dell.com/students-and-graduates). Hopkinton. Dell runs a genuine design practice.
-- **Oracle** — [Campus Recruiting](https://www.google.com/search?q=Oracle+campus+recruiting+early+career). Burlington office.
-- **Intel** — [Students](https://www.google.com/search?q=Intel+student+careers+university). Hudson office.
-- **Qualcomm** — [University Careers](https://www.google.com/search?q=Qualcomm+university+careers+early+career). Boxborough office.
-- **ServiceNow** — [Early Talent](https://www.google.com/search?q=ServiceNow+early+talent+university+recruiting). Waltham office. Large and growing design org.
-- **Akamai** — [University Programs](https://www.google.com/search?q=Akamai+university+program+early+career). Cambridge HQ.
+- **Oracle** — [Students & Grads](https://www.oracle.com/careers/students-grads/). Burlington office.
+- **Intel** — [Students](https://jobs.intel.com/en/students). Hudson office.
+- **Qualcomm** — [Careers](https://www.qualcomm.com/company/careers). Boxborough office.
+- **ServiceNow** — [Early Careers](https://careers.servicenow.com/early-careers/). Waltham office. Large and growing design org.
+- **Akamai** — [Students & Graduates](https://www.akamai.com/careers/students-and-graduates). Cambridge HQ.
 - **Uber** — [University](https://www.uber.com/us/en/careers/teams/university/).
 - **LinkedIn** — [Students & Recent Grads](https://careers.linkedin.com/students).
 - **Spotify** — [Early Career / Students](https://www.lifeatspotify.com/students).
@@ -107,24 +107,24 @@ is a legitimate way to land in a design seat.
 ## Finance / insurance
 - **Fidelity** — [Students & Grads](https://jobs.fidelity.com/students-and-grads/). Big Boston presence, serious in-house UX org, well-known rotational programs.
 - **Liberty Mutual** — [Students](https://jobs.libertymutualgroup.com/career-area/students-graduates/). Boston HQ, has run a design-specific development program.
-- **MassMutual** — [Early Career](https://www.google.com/search?q=MassMutual+early+career+program+students).
-- **State Street** — [Students](https://www.google.com/search?q=State+Street+student+early+career+program).
-- **John Hancock / Manulife** — [Early Career](https://www.google.com/search?q=Manulife+John+Hancock+early+career+students).
-- **Citizens** — [Early Career](https://www.google.com/search?q=Citizens+Bank+early+career+program).
+- **MassMutual** — [Careers](https://careers.massmutual.com/).
+- **State Street** — [Careers](https://careers.statestreet.com/).
+- **John Hancock / Manulife** — [Students & New Graduates](https://www.manulife.com/en/careers/students-and-new-graduates.html).
+- **Citizens** — [Careers](https://jobs.citizensbank.com/).
 
 ## Healthcare / life sciences
-- **CVS Health** — [Students](https://www.google.com/search?q=CVS+Health+university+early+career+students). Large digital design org.
-- **Takeda** — [Early Careers](https://www.google.com/search?q=Takeda+early+career+students+program). Cambridge.
-- **Thermo Fisher** — [Early Career](https://www.google.com/search?q=Thermo+Fisher+early+career+program+students). Waltham.
+- **CVS Health** — [Students](https://jobs.cvshealth.com/us/en/students). Large digital design org.
+- **Takeda** — [Careers](https://www.takedajobs.com/). Cambridge.
+- **Thermo Fisher** — [Careers](https://jobs.thermofisher.com/). Waltham.
 - **Mass General Brigham**, **Dana-Farber** — fellowship and early-career programs, low competition.
 
 ## Retail / consumer / software
 - **Wayfair** — [Early Career](https://www.wayfair.com/careers/early-career). Boston, large design org, historically a strong junior pipeline.
-- **PTC** — [Early Career](https://www.google.com/search?q=PTC+early+career+program+students). Boston.
+- **PTC** — [Careers](https://www.ptc.com/en/careers). Boston.
 - **MathWorks** — [Students](https://www.mathworks.com/company/jobs/students.html). Natick. Runs a genuine and well-regarded early-career program, and your MSCS plus data background is an unusually good fit.
-- **Bose** — [Early Career](https://www.google.com/search?q=Bose+early+career+university+program). Framingham.
-- **New Balance** — [Early Career](https://www.google.com/search?q=New+Balance+early+career+program+students). Boston.
-- **DraftKings** — [Early Career](https://www.google.com/search?q=DraftKings+early+career+program). Boston.
+- **Bose** — [Careers](https://careers.bose.com/). Framingham.
+- **New Balance** — [Careers](https://jobs.newbalance.com/global/en). Boston.
+- **DraftKings** — [Careers](https://careers.draftkings.com/). Boston.
 - **Dynatrace**, **Rapid7**, **athenahealth**, **Cimpress/Vistaprint** — smaller programs, check careers page for "early career" or "associate."
 
 ---
