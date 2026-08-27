@@ -105,21 +105,21 @@ teams that almost nobody applies to. Several of these are rotational, which
 is a legitimate way to land in a design seat.
 
 ## Finance / insurance
-- **Fidelity** — [Students & Grads](https://jobs.fidelity.com/students-and-grads/). Big Boston presence, serious in-house UX org, well-known rotational programs.
-- **Liberty Mutual** — [Students](https://jobs.libertymutualgroup.com/career-area/students-graduates/). Boston HQ, has run a design-specific development program.
+- **Fidelity** — [Students](https://jobs.fidelity.com/en/students/). Big Boston presence, serious in-house UX org, well-known rotational programs.
+- **Liberty Mutual** — [Campus & Development Programs](https://jobs.libertymutualgroup.com/careers/campus/graduate-internships-development-programs/). Boston HQ, has run a design-specific development program.
 - **MassMutual** — [Careers](https://careers.massmutual.com/).
 - **State Street** — [Careers](https://careers.statestreet.com/).
 - **John Hancock / Manulife** — [Students & New Graduates](https://www.manulife.com/en/careers/students-and-new-graduates.html).
-- **Citizens** — [Careers](https://jobs.citizensbank.com/).
+- **Citizens** — [Student & Recent Graduates](https://jobs.citizensbank.com/category/student-and-recent-graduates-jobs/288/8240544/1).
 
 ## Healthcare / life sciences
-- **CVS Health** — [Students](https://jobs.cvshealth.com/us/en/students). Large digital design org.
+- **CVS Health** — [Students](https://jobs.cvshealth.com/us/en/students-jobs). Large digital design org.
 - **Takeda** — [Careers](https://www.takedajobs.com/). Cambridge.
-- **Thermo Fisher** — [Careers](https://jobs.thermofisher.com/). Waltham.
+- **Thermo Fisher** — [Students & Internships](https://jobs.thermofisher.com/global/en/c/students-internships-jobs). Waltham.
 - **Mass General Brigham**, **Dana-Farber** — fellowship and early-career programs, low competition.
 
 ## Retail / consumer / software
-- **Wayfair** — [Early Career](https://www.wayfair.com/careers/early-career). Boston, large design org, historically a strong junior pipeline.
+- **Wayfair** — [Early Talent](https://www.aboutwayfair.com/careers/early-talent#upcoming-recent-graduates-north-america). Boston, large design org, historically a strong junior pipeline.
 - **PTC** — [Careers](https://www.ptc.com/en/careers). Boston.
 - **MathWorks** — [Students](https://www.mathworks.com/company/jobs/students.html). Natick. Runs a genuine and well-regarded early-career program, and your MSCS plus data background is an unusually good fit.
 - **Bose** — [Careers](https://careers.bose.com/). Framingham.
