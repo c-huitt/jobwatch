@@ -68,7 +68,11 @@ Set an alert, check in September, don't invest heavily.
 - **Qualcomm** — [University Careers](https://www.google.com/search?q=Qualcomm+university+careers+early+career). Boxborough office.
 - **ServiceNow** — [Early Talent](https://www.google.com/search?q=ServiceNow+early+talent+university+recruiting). Waltham office. Large and growing design org.
 - **Akamai** — [University Programs](https://www.google.com/search?q=Akamai+university+program+early+career). Cambridge HQ.
-- **Uber**, **LinkedIn**, **Spotify**, **ByteDance/TikTok** — all run UR pages; ByteDance Early Careers is the one with the most volume.
+- **Uber** — [University](https://www.uber.com/us/en/careers/teams/university/).
+- **LinkedIn** — [Students & Recent Grads](https://careers.linkedin.com/students).
+- **Spotify** — [Early Career / Students](https://www.lifeatspotify.com/students).
+- **ByteDance** — [Campus / Early Careers](https://jobs.bytedance.com/en/campus). Highest volume of this group.
+- **TikTok** — [Campus](https://careers.tiktok.com/campus).
 
 ---
 
